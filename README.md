@@ -10,7 +10,7 @@ Visualise accomodation and ratings on an interactive map.
 │   ├── accommodations.csv
 │   └── accommodations_enriched.csv
 ├── outputs
-│   └── accommodations_map.html
+│   └── index.html
 ├── notebooks
 │   └── get_data.ipynb
 ├── src
@@ -54,5 +54,5 @@ $env:GP_API_KEY = "your_api_key_here"
 ```cmd
 python -m src.main
 ```
-- The generated map is `outputs/accommodations_map.html`.
+- The generated map is served at your GitHub Pages URL root (e.g., `https://<username>.github.io/accomodation-analysis/`) after deployment.
 
