@@ -26,8 +26,9 @@ def main():
     
     # Create base map
     m = create_base_map(df_map)
-            
-    # Save map
+    # Ensure output directory exists then save map
+    out_dir = os.path.dirname(MAP_OUTPUT_FILE) or '.'
+    os.makedirs(out_dir, exist_ok=True)
     m.save(MAP_OUTPUT_FILE)
     print(f"Map saved to {MAP_OUTPUT_FILE}")
     

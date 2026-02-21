@@ -8,7 +8,8 @@ Visualise accomodation and ratings on an interactive map.
 .
 ├── data
 │   ├── accommodations.csv
-│   ├── accommodations_enriched.csv
+│   └── accommodations_enriched.csv
+├── outputs
 │   └── accommodations_map.html
 ├── notebooks
 │   └── get_data.ipynb
@@ -53,5 +54,5 @@ $env:GP_API_KEY = "your_api_key_here"
 ```cmd
 python -m src.main
 ```
-- The generated map is `data/accommodations_map.html`.
+- The generated map is `outputs/accommodations_map.html`.
 
