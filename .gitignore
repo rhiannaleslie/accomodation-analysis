@@ -26,6 +26,8 @@ dist/
 # Logs
 *.log
 
-# Ensure data folder is tracked
+# Ensure data and outputs folders are tracked for deployment
 !/data/
 !/data/**
+!/outputs/
+!/outputs/**
