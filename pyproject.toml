@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "accommodation-analysis"
+version = "0.1.0"
+description = "Analyze accommodations and generate interactive travel maps with Google Places API"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    {name = "Rhianna Leslie", email = "rhiannaleslie@hotmail.co.uk"}
+]
+
+dependencies = [
+    "pandas>=1.3.0",
+    "requests>=2.25.0",
+    "folium>=0.12.0",
+]
+
+
+
+
+
+
+
