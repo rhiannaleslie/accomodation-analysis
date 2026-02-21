@@ -1,0 +1,31 @@
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editor directories
+.vscode/
+
+# OS files
+.DS_Store
+
+# Logs
+*.log
+
+# Ensure data folder is tracked
+!/data/
+!/data/**
