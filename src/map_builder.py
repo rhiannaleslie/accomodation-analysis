@@ -38,7 +38,7 @@ def create_base_map(df_map):
     m = folium.Map(
         location=[center_lat, center_lng],
         zoom_start=4,
-        tiles='OpenStreetMap'
+        tiles='CartoDB positron'
     )
     
     # Add accommodation markers (blue)
