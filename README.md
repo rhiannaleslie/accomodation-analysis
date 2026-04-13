@@ -23,25 +23,19 @@ Visualise accomodation and ratings on an interactive map.
 ```
 
 **Quick setup**
-1. Create a Conda environment (recommended):
+1. Install dependencies and create a virtual environment using uv:
 
 ```cmd
-conda create --name env_name python=3.12
+uv sync
 ```
 
-2. Activate the environment:
+2. Activate the virtual environment:
 
 ```cmd
-conda activate env_name
+source .venv/bin/activate
 ```
 
-3. Install dependencies:
-
-```cmd
-pip install -e .
-```
-
-4. (Optional) Set Google Places API key if you will re-enrich data:
+3. (Optional) Set Google Places API key if you will re-enrich data:
 
 ```powershell
 $env:GP_API_KEY = "your_api_key_here"
@@ -49,7 +43,7 @@ $env:GP_API_KEY = "your_api_key_here"
 
 **Run**
 - Add or edit `data/accommodations.csv`, or use `notebooks/get_data.ipynb` to interactively add entries.
-- To enrich and generate the map, run the following in your conda env:
+- To enrich and generate the map, run the following:
 
 ```cmd
 python -m src.main
