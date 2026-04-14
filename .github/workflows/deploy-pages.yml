@@ -31,9 +31,22 @@ jobs:
       - name: Generate map
         run: |
           python -m src.main
-      
+          mkdir -p docs/assets/map
+          cp outputs/index.html docs/assets/map/index.html
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1
+
+      - name: Build Jekyll site
+        run: |
+          cd docs
+          bundle install
+          bundle exec jekyll build
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./outputs 
+          publish_dir: ./docs/_site
