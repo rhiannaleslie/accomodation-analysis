@@ -1,0 +1,3365 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cbc2651d5b25ef1ed3e35e2817a141b3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cbc2651d5b25ef1ed3e35e2817a141b3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cbc2651d5b25ef1ed3e35e2817a141b3 = L.map(
+                "map_cbc2651d5b25ef1ed3e35e2817a141b3",
+                {
+                    center: [8.333151919117647, 107.91011269264705],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6fb561aeaaa9b13800a2ce03cc1a8210 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6fb561aeaaa9b13800a2ce03cc1a8210.addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var marker_35eb4745882eca3bbdff26bb001d1b73 = L.marker(
+                [13.7528871, 100.5034105],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_5d7248cca0bffa6bc5fd4b326fd0d46d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_19d2d4424482933949f319c8e5a99689 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_673c84b2f2acf8a86f7ada4f37b191af = $(`<div id="html_673c84b2f2acf8a86f7ada4f37b191af" style="width: 100.0%; height: 100.0%;"><b>Once Again Hostel</b><br>Bangkok, Thailand<br>Your Rating: 4.0/5<br>Google Rating: 4.6<br>Dates: 31/03/25 - 03/04/25<br><br><i>Comment:</i><br>Very clean and tidy but quite quiet. Location was good to explore the old town and popular sites.</div>`)[0];
+                popup_19d2d4424482933949f319c8e5a99689.setContent(html_673c84b2f2acf8a86f7ada4f37b191af);
+            
+        
+
+        marker_35eb4745882eca3bbdff26bb001d1b73.bindPopup(popup_19d2d4424482933949f319c8e5a99689)
+        ;
+
+        
+    
+    
+            marker_35eb4745882eca3bbdff26bb001d1b73.bindTooltip(
+                `<div>
+                     Once Again Hostel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_35eb4745882eca3bbdff26bb001d1b73.setIcon(icon_5d7248cca0bffa6bc5fd4b326fd0d46d);
+            
+    
+            var marker_71f0f8b087365b814a204009b0c90bc3 = L.marker(
+                [13.7761235, 100.5419893],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_31634b9034a02f74d5ff1314397ad2a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7cd6870529d53f45a9774b23e4e26d89 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5cfd4f63bbea38afa90aabc3b4d55d3e = $(`<div id="html_5cfd4f63bbea38afa90aabc3b4d55d3e" style="width: 100.0%; height: 100.0%;"><b>The Yard Hostel </b><br>Bangkok, Thailand<br>Your Rating: 4.0/5<br>Google Rating: 4.7<br>Dates: 03/04/25 - 05/04/25<br><br><i>Comment:</i><br>Cute hostel, very green and comfy beds. Very social and in a cool neighbourhood. Free yoga was very much harder than anticipated!</div>`)[0];
+                popup_7cd6870529d53f45a9774b23e4e26d89.setContent(html_5cfd4f63bbea38afa90aabc3b4d55d3e);
+            
+        
+
+        marker_71f0f8b087365b814a204009b0c90bc3.bindPopup(popup_7cd6870529d53f45a9774b23e4e26d89)
+        ;
+
+        
+    
+    
+            marker_71f0f8b087365b814a204009b0c90bc3.bindTooltip(
+                `<div>
+                     The Yard Hostel 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_71f0f8b087365b814a204009b0c90bc3.setIcon(icon_31634b9034a02f74d5ff1314397ad2a5);
+            
+    
+            var marker_04e42510b70759860d412cc5abcc7395 = L.marker(
+                [8.1270726, 98.6220122],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_0e8f93a0e92e05c613aa7c0454d562ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0009827f25531a89de7ea27c2eaea28 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aef2f65ad440c7ae36403383c7dcf0fd = $(`<div id="html_aef2f65ad440c7ae36403383c7dcf0fd" style="width: 100.0%; height: 100.0%;"><b>Island Yoga</b><br>Ko Yao Noi, Thailand<br>Your Rating: 5.0/5<br>Google Rating: 4.8<br>Dates: 05/04/25 - 07/04/25<br><br><i>Comment:</i><br>Stayed in 3 bed female dorms, resort was paradise</div>`)[0];
+                popup_d0009827f25531a89de7ea27c2eaea28.setContent(html_aef2f65ad440c7ae36403383c7dcf0fd);
+            
+        
+
+        marker_04e42510b70759860d412cc5abcc7395.bindPopup(popup_d0009827f25531a89de7ea27c2eaea28)
+        ;
+
+        
+    
+    
+            marker_04e42510b70759860d412cc5abcc7395.bindTooltip(
+                `<div>
+                     Island Yoga
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_04e42510b70759860d412cc5abcc7395.setIcon(icon_0e8f93a0e92e05c613aa7c0454d562ef);
+            
+    
+            var marker_df262ea64f7f09ac101779105796db44 = L.marker(
+                [8.091016, 98.6163822],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_37862e0ea4b3228951e886c521b8c078 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_872024ad0b6c30298b5fc6a765afbcd8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8be467dfa1255969dc63a4436b1d6a04 = $(`<div id="html_8be467dfa1255969dc63a4436b1d6a04" style="width: 100.0%; height: 100.0%;"><b>Mudka Hostel</b><br>Ko Yao Noi, Thailand<br>Your Rating: 4.0/5<br>Google Rating: 4.9<br>Dates: 07/04/25 - 09/04/25<br><br><i>Comment:</i><br>Lovely cute hostel, although quite basic</div>`)[0];
+                popup_872024ad0b6c30298b5fc6a765afbcd8.setContent(html_8be467dfa1255969dc63a4436b1d6a04);
+            
+        
+
+        marker_df262ea64f7f09ac101779105796db44.bindPopup(popup_872024ad0b6c30298b5fc6a765afbcd8)
+        ;
+
+        
+    
+    
+            marker_df262ea64f7f09ac101779105796db44.bindTooltip(
+                `<div>
+                     Mudka Hostel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_df262ea64f7f09ac101779105796db44.setIcon(icon_37862e0ea4b3228951e886c521b8c078);
+            
+    
+            var marker_182f571acac2d367ea6dd6a6d730090a = L.marker(
+                [8.6660486, 98.2538522],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_8445eee59c6c96df619ffa06dbb15ba8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_84196e8e7a3606bb2d6f06e010e0fa7c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9ab5a8a1481ef62a58b6f7e921355a04 = $(`<div id="html_9ab5a8a1481ef62a58b6f7e921355a04" style="width: 100.0%; height: 100.0%;"><b>Theppahrak Hostel</b><br>Khao Lak, Thailand<br>Your Rating: 3.0/5<br>Google Rating: 4.7<br>Dates: 09/04/25 - 11/04/25<br><br><i>Comment:</i><br>Average hostel, not social</div>`)[0];
+                popup_84196e8e7a3606bb2d6f06e010e0fa7c.setContent(html_9ab5a8a1481ef62a58b6f7e921355a04);
+            
+        
+
+        marker_182f571acac2d367ea6dd6a6d730090a.bindPopup(popup_84196e8e7a3606bb2d6f06e010e0fa7c)
+        ;
+
+        
+    
+    
+            marker_182f571acac2d367ea6dd6a6d730090a.bindTooltip(
+                `<div>
+                     Theppahrak Hostel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_182f571acac2d367ea6dd6a6d730090a.setIcon(icon_8445eee59c6c96df619ffa06dbb15ba8);
+            
+    
+            var marker_c6693031a3bf64aade42a4e9da7f713e = L.marker(
+                [8.644973400000001, 98.2509724],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_802d5415d713e36a29c131e2a22c6f58 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d59ac6167590316d3b65dd6f050f4f41 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d9a9e95588124a9ce325e9e68133d3a8 = $(`<div id="html_d9a9e95588124a9ce325e9e68133d3a8" style="width: 100.0%; height: 100.0%;"><b>Manta Queen 3</b><br>Similan Islands, Thailand<br>Your Rating: 5.0/5<br>Google Rating: 4.0<br>Dates: 11/04/25 - 14/04/25<br><br><i>Comment:</i><br>I had my own room!</div>`)[0];
+                popup_d59ac6167590316d3b65dd6f050f4f41.setContent(html_d9a9e95588124a9ce325e9e68133d3a8);
+            
+        
+
+        marker_c6693031a3bf64aade42a4e9da7f713e.bindPopup(popup_d59ac6167590316d3b65dd6f050f4f41)
+        ;
+
+        
+    
+    
+            marker_c6693031a3bf64aade42a4e9da7f713e.bindTooltip(
+                `<div>
+                     Manta Queen 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c6693031a3bf64aade42a4e9da7f713e.setIcon(icon_802d5415d713e36a29c131e2a22c6f58);
+            
+    
+            var marker_fbb98ad16661d48b38a133173a9daccd = L.marker(
+                [8.718139599999999, 98.2515748],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_0cfa876d487d0938c906ebf6e81c861f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1cedb970549388fc4c82df5115e421f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b01aa72147a83b3881907bb74aae8607 = $(`<div id="html_b01aa72147a83b3881907bb74aae8607" style="width: 100.0%; height: 100.0%;"><b>Raksuan Homestay</b><br>Khao Lak, Thailand<br>Your Rating: 5.0/5<br>Google Rating: 4.9<br>Dates: 15/04/25 - 16/04/25<br><br><i>Comment:</i><br>So peaceful, listened to the rain & chilled.</div>`)[0];
+                popup_1cedb970549388fc4c82df5115e421f5.setContent(html_b01aa72147a83b3881907bb74aae8607);
+            
+        
+
+        marker_fbb98ad16661d48b38a133173a9daccd.bindPopup(popup_1cedb970549388fc4c82df5115e421f5)
+        ;
+
+        
+    
+    
+            marker_fbb98ad16661d48b38a133173a9daccd.bindTooltip(
+                `<div>
+                     Raksuan Homestay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fbb98ad16661d48b38a133173a9daccd.setIcon(icon_0cfa876d487d0938c906ebf6e81c861f);
+            
+    
+            var marker_4a71d7a92610a35dfda8b35ab5308a48 = L.marker(
+                [9.1219016, 99.3107741],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_0aed60cdac2cb2571d06de5089ca4bb5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e36fd0455108d56bf0afd57dbb9320d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bc394ba217cb79ae84ba8eac3e22ce1e = $(`<div id="html_bc394ba217cb79ae84ba8eac3e22ce1e" style="width: 100.0%; height: 100.0%;"><b>Young Money Hostel</b><br>Surat Thani, Thailand<br>Your Rating: 3.0/5<br>Google Rating: 4.6<br>Dates: 16/04/25 - 17/04/25<br><br><i>Comment:</i><br>Was fine ...</div>`)[0];
+                popup_e36fd0455108d56bf0afd57dbb9320d1.setContent(html_bc394ba217cb79ae84ba8eac3e22ce1e);
+            
+        
+
+        marker_4a71d7a92610a35dfda8b35ab5308a48.bindPopup(popup_e36fd0455108d56bf0afd57dbb9320d1)
+        ;
+
+        
+    
+    
+            marker_4a71d7a92610a35dfda8b35ab5308a48.bindTooltip(
+                `<div>
+                     Young Money Hostel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4a71d7a92610a35dfda8b35ab5308a48.setIcon(icon_0aed60cdac2cb2571d06de5089ca4bb5);
+            
+    
+            var marker_6736a2f75588ec24f025c6764922082f = L.marker(
+                [13.7628375, 100.4987966],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_aa2a608bef62cc77c3c4a82bc25c5ec9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_72eba4cbd40c5279b416cd7623ae3663 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f1da3097388465603ed95440094dcf9d = $(`<div id="html_f1da3097388465603ed95440094dcf9d" style="width: 100.0%; height: 100.0%;"><b>The lodge Bangkok</b><br>Bangkok, Thailand<br>Your Rating: 4.0/5<br>Google Rating: 4.0<br>Dates: 17/04/25 - 18/04/25<br><br><i>Comment:</i><br>Nice, quite quiet, only two other people there</div>`)[0];
+                popup_72eba4cbd40c5279b416cd7623ae3663.setContent(html_f1da3097388465603ed95440094dcf9d);
+            
+        
+
+        marker_6736a2f75588ec24f025c6764922082f.bindPopup(popup_72eba4cbd40c5279b416cd7623ae3663)
+        ;
+
+        
+    
+    
+            marker_6736a2f75588ec24f025c6764922082f.bindTooltip(
+                `<div>
+                     The lodge Bangkok
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6736a2f75588ec24f025c6764922082f.setIcon(icon_aa2a608bef62cc77c3c4a82bc25c5ec9);
+            
+    
+            var marker_cde30a2f9f78932d69572dc88e10a363 = L.marker(
+                [12.3278417, 107.0674421],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_cf309291943cd540202c2febb8253393 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a23f735de833a0a312cc132b8211402 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0ee4dc8e6c0101d8fff7a22cae305216 = $(`<div id="html_0ee4dc8e6c0101d8fff7a22cae305216" style="width: 100.0%; height: 100.0%;"><b>Jahoo Camp</b><br>Mondulkiri Province, Cambodia<br>Your Rating: 4.0/5<br>Google Rating: 5.0<br>Dates: 25/04/25 - 26/04/25<br><br><i>Comment:</i><br>Amazing staff, beautiful nature. Alot of bugs</div>`)[0];
+                popup_4a23f735de833a0a312cc132b8211402.setContent(html_0ee4dc8e6c0101d8fff7a22cae305216);
+            
+        
+
+        marker_cde30a2f9f78932d69572dc88e10a363.bindPopup(popup_4a23f735de833a0a312cc132b8211402)
+        ;
+
+        
+    
+    
+            marker_cde30a2f9f78932d69572dc88e10a363.bindTooltip(
+                `<div>
+                     Jahoo Camp
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cde30a2f9f78932d69572dc88e10a363.setIcon(icon_cf309291943cd540202c2febb8253393);
+            
+    
+            var marker_3d592a01b4696237749f700a27f164ef = L.marker(
+                [12.5044845, 107.1668835],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_8ac4e64faf43442a1e0fc9cbef26f55d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ee093d16429d4e8d8f583670b50d6c6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b7495c00cad4bcd0a47183746f15825f = $(`<div id="html_b7495c00cad4bcd0a47183746f15825f" style="width: 100.0%; height: 100.0%;"><b>Pida Coffee Farm</b><br>Mondulkiri Province, Cambodia<br>Your Rating: 5.0/5<br>Google Rating: 4.7<br>Dates: 26/04/25 - 28/04/25<br><br><i>Comment:</i><br>So beautiful, room has a balcony with a view over the jungle!</div>`)[0];
+                popup_8ee093d16429d4e8d8f583670b50d6c6.setContent(html_b7495c00cad4bcd0a47183746f15825f);
+            
+        
+
+        marker_3d592a01b4696237749f700a27f164ef.bindPopup(popup_8ee093d16429d4e8d8f583670b50d6c6)
+        ;
+
+        
+    
+    
+            marker_3d592a01b4696237749f700a27f164ef.bindTooltip(
+                `<div>
+                     Pida Coffee Farm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3d592a01b4696237749f700a27f164ef.setIcon(icon_8ac4e64faf43442a1e0fc9cbef26f55d);
+            
+    
+            var marker_829f430c3f82155b5bdb409da304e4ca = L.marker(
+                [12.4926881, 106.0159149],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_b16eab37f39ecc9ba4af4eada704e8d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6cafa890981758fa664922a9508f22f3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e15a5f5b30da07546283f3572951b775 = $(`<div id="html_e15a5f5b30da07546283f3572951b775" style="width: 100.0%; height: 100.0%;"><b>Sorya Guesthouse & Dolphin Tours</b><br>Kratie, Cambodia<br>Your Rating: 4.0/5<br>Google Rating: 4.7<br>Dates: 28/04/25 - 29/04/25<br><br><i>Comment:</i><br>Restaurant / cafe had a lovely sunset view</div>`)[0];
+                popup_6cafa890981758fa664922a9508f22f3.setContent(html_e15a5f5b30da07546283f3572951b775);
+            
+        
+
+        marker_829f430c3f82155b5bdb409da304e4ca.bindPopup(popup_6cafa890981758fa664922a9508f22f3)
+        ;
+
+        
+    
+    
+            marker_829f430c3f82155b5bdb409da304e4ca.bindTooltip(
+                `<div>
+                     Sorya Guesthouse & Dolphin Tours
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_829f430c3f82155b5bdb409da304e4ca.setIcon(icon_b16eab37f39ecc9ba4af4eada704e8d3);
+            
+    
+            var marker_2ee1d8b907f71033f9d9da5ee19e0ddc = L.marker(
+                [12.4820502, 106.0060746],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_432742a547c137451a31ab59d0b998dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e58347185c8e594821117ec54f89ee42 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea3868aba8d9b73308b1ad0d723c7c3a = $(`<div id="html_ea3868aba8d9b73308b1ad0d723c7c3a" style="width: 100.0%; height: 100.0%;"><b>Pomelo Homestay</b><br>Kaoh Trong, Cambodia<br>Your Rating: 4.0/5<br>Google Rating: 4.8<br>Dates: 29/04/25 - 30/04/25<br><br><i>Comment:</i><br>Very traditional homestay, bucket shower & squat loo but all very beautiful</div>`)[0];
+                popup_e58347185c8e594821117ec54f89ee42.setContent(html_ea3868aba8d9b73308b1ad0d723c7c3a);
+            
+        
+
+        marker_2ee1d8b907f71033f9d9da5ee19e0ddc.bindPopup(popup_e58347185c8e594821117ec54f89ee42)
+        ;
+
+        
+    
+    
+            marker_2ee1d8b907f71033f9d9da5ee19e0ddc.bindTooltip(
+                `<div>
+                     Pomelo Homestay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2ee1d8b907f71033f9d9da5ee19e0ddc.setIcon(icon_432742a547c137451a31ab59d0b998dc);
+            
+    
+            var marker_fdf248bb7d40365e51eb61b8f482c280 = L.marker(
+                [11.5730895, 104.9283493],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_9baf8b34272be17b42f75bcbc5e4b3e5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eac2f86558ffc41818be9fef0b9f857b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a4517efa3eaf38229c93779b3536bee0 = $(`<div id="html_a4517efa3eaf38229c93779b3536bee0" style="width: 100.0%; height: 100.0%;"><b>Onederz</b><br>Phnom Penh, Cambodia<br>Your Rating: 3.0/5<br>Google Rating: 4.4<br>Dates: 30/04/25 - 03/05/25<br><br><i>Comment:</i><br>Nice enough, busy pool, laundry done!</div>`)[0];
+                popup_eac2f86558ffc41818be9fef0b9f857b.setContent(html_a4517efa3eaf38229c93779b3536bee0);
+            
+        
+
+        marker_fdf248bb7d40365e51eb61b8f482c280.bindPopup(popup_eac2f86558ffc41818be9fef0b9f857b)
+        ;
+
+        
+    
+    
+            marker_fdf248bb7d40365e51eb61b8f482c280.bindTooltip(
+                `<div>
+                     Onederz
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fdf248bb7d40365e51eb61b8f482c280.setIcon(icon_9baf8b34272be17b42f75bcbc5e4b3e5);
+            
+    
+            var marker_580da9ccbe004e311b86b54d1c638840 = L.marker(
+                [13.3583451, 103.8567491],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_df70fdbd87eb6bd1b27d7f9fefe329e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a7c1b3b44979834685d6f2140c017af0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_245e837f1f10187e9c873ac712557858 = $(`<div id="html_245e837f1f10187e9c873ac712557858" style="width: 100.0%; height: 100.0%;"><b>Twizt Hostel & Hotel </b><br>Siem Reap, Cambodia<br>Your Rating: 4.0/5<br>Google Rating: 4.6<br>Dates: 19/04/25 - 24/04/25<br><br><i>Comment:</i><br>Nice location, great price. Felt much more like a hotel. Had a rooftop pool/bar. Toilets were far away & I did hear creatures in the ceiling.</div>`)[0];
+                popup_a7c1b3b44979834685d6f2140c017af0.setContent(html_245e837f1f10187e9c873ac712557858);
+            
+        
+
+        marker_580da9ccbe004e311b86b54d1c638840.bindPopup(popup_a7c1b3b44979834685d6f2140c017af0)
+        ;
+
+        
+    
+    
+            marker_580da9ccbe004e311b86b54d1c638840.bindTooltip(
+                `<div>
+                     Twizt Hostel & Hotel 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_580da9ccbe004e311b86b54d1c638840.setIcon(icon_df70fdbd87eb6bd1b27d7f9fefe329e8);
+            
+    
+            var marker_33e2ab5db4ed7279d005795d8c2d89a7 = L.marker(
+                [12.4587634, 107.1975316],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_bd56c3d44011f9ac01fa9e95ea9cf475 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d82b3a218e2b29998c4f1454c72ef9c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a0e336f78071542f218c0d03ae892db7 = $(`<div id="html_a0e336f78071542f218c0d03ae892db7" style="width: 100.0%; height: 100.0%;"><b>Manel Guesthouse</b><br>Mondulkiri Province, Cambodia<br>Your Rating: 3.0/5<br>Google Rating: 4.8<br>Dates: 24/04/25 - 25/04/25<br><br><i>Comment:</i><br>Lovely owners/family. Basic accom</div>`)[0];
+                popup_0d82b3a218e2b29998c4f1454c72ef9c.setContent(html_a0e336f78071542f218c0d03ae892db7);
+            
+        
+
+        marker_33e2ab5db4ed7279d005795d8c2d89a7.bindPopup(popup_0d82b3a218e2b29998c4f1454c72ef9c)
+        ;
+
+        
+    
+    
+            marker_33e2ab5db4ed7279d005795d8c2d89a7.bindTooltip(
+                `<div>
+                     Manel Guesthouse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_33e2ab5db4ed7279d005795d8c2d89a7.setIcon(icon_bd56c3d44011f9ac01fa9e95ea9cf475);
+            
+    
+            var marker_ca28880d5a148a109ed3845cb0c73f3c = L.marker(
+                [10.769396, 106.697226],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_03eb3480b89d3668900ccf357aa0ea80 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_66cbef5b067191984f60710b6a4d176d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f44ade9d2f05af07e439b96f2f9d67c9 = $(`<div id="html_f44ade9d2f05af07e439b96f2f9d67c9" style="width: 100.0%; height: 100.0%;"><b>Triple Hostel</b><br>Ho Chi Min City, Vietnam<br>Your Rating: 2.0/5<br>Google Rating: 4.8<br>Dates: 03/05/25 - 05/05/25<br><br><i>Comment:</i><br>Nice location & decent bed but not enough toilets</div>`)[0];
+                popup_66cbef5b067191984f60710b6a4d176d.setContent(html_f44ade9d2f05af07e439b96f2f9d67c9);
+            
+        
+
+        marker_ca28880d5a148a109ed3845cb0c73f3c.bindPopup(popup_66cbef5b067191984f60710b6a4d176d)
+        ;
+
+        
+    
+    
+            marker_ca28880d5a148a109ed3845cb0c73f3c.bindTooltip(
+                `<div>
+                     Triple Hostel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ca28880d5a148a109ed3845cb0c73f3c.setIcon(icon_03eb3480b89d3668900ccf357aa0ea80);
+            
+    
+            var marker_4d4aefa3535f1c63160d13242fea7c55 = L.marker(
+                [11.9540347, 108.4365741],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_bf6a746bfb65dfc80cd78cf19a680b03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a5662dd41b97fe44af29751c699cd857 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c7f5ff37e7901fd1cc5c58cb7d97d079 = $(`<div id="html_c7f5ff37e7901fd1cc5c58cb7d97d079" style="width: 100.0%; height: 100.0%;"><b>May house dalat</b><br>Da Lat, Vietnam<br>Your Rating: 3.0/5<br>Google Rating: 3.9<br>Dates: 06/05/25 - 07/05/25<br><br><i>Comment:</i><br>Really nice family but a tad expensive</div>`)[0];
+                popup_a5662dd41b97fe44af29751c699cd857.setContent(html_c7f5ff37e7901fd1cc5c58cb7d97d079);
+            
+        
+
+        marker_4d4aefa3535f1c63160d13242fea7c55.bindPopup(popup_a5662dd41b97fe44af29751c699cd857)
+        ;
+
+        
+    
+    
+            marker_4d4aefa3535f1c63160d13242fea7c55.bindTooltip(
+                `<div>
+                     May house dalat
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4d4aefa3535f1c63160d13242fea7c55.setIcon(icon_bf6a746bfb65dfc80cd78cf19a680b03);
+            
+    
+            var marker_cf2b8754f1cb16ff35923d87e5653c85 = L.marker(
+                [16.4722977, 107.5960979],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_8d9bb61c9a2dbf1fee31311d7b08d689 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c5ad3a06776b3555bb17126d1f3f848 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_90c67240f8c9e3d7a92ca67e62f54214 = $(`<div id="html_90c67240f8c9e3d7a92ca67e62f54214" style="width: 100.0%; height: 100.0%;"><b>Pisces Hotel</b><br>Hue, Vietnam<br>Your Rating: 4.0/5<br>Google Rating: 4.4<br>Dates: 08/05/25 - 10/05/25<br><br><i>Comment:</i><br>Pretty and comfy </div>`)[0];
+                popup_1c5ad3a06776b3555bb17126d1f3f848.setContent(html_90c67240f8c9e3d7a92ca67e62f54214);
+            
+        
+
+        marker_cf2b8754f1cb16ff35923d87e5653c85.bindPopup(popup_1c5ad3a06776b3555bb17126d1f3f848)
+        ;
+
+        
+    
+    
+            marker_cf2b8754f1cb16ff35923d87e5653c85.bindTooltip(
+                `<div>
+                     Pisces Hotel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cf2b8754f1cb16ff35923d87e5653c85.setIcon(icon_8d9bb61c9a2dbf1fee31311d7b08d689);
+            
+    
+            var marker_bf333357602e12bcb660b2c2b00c6115 = L.marker(
+                [15.88049, 108.3307507],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_63331e0aab22aa21f0ebabfae791f993 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f7b30ec4803550a5e6fbda75dc4bf476 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c7ac96e665f2e25ab55539bec43aafbb = $(`<div id="html_c7ac96e665f2e25ab55539bec43aafbb" style="width: 100.0%; height: 100.0%;"><b>Ancient Town Hotel</b><br>Hoi An, Vietnam<br>Your Rating: 3.0/5<br>Google Rating: 4.4<br>Dates: 10/05/25 - 13/05/25<br><br><i>Comment:</i><br>Fab location</div>`)[0];
+                popup_f7b30ec4803550a5e6fbda75dc4bf476.setContent(html_c7ac96e665f2e25ab55539bec43aafbb);
+            
+        
+
+        marker_bf333357602e12bcb660b2c2b00c6115.bindPopup(popup_f7b30ec4803550a5e6fbda75dc4bf476)
+        ;
+
+        
+    
+    
+            marker_bf333357602e12bcb660b2c2b00c6115.bindTooltip(
+                `<div>
+                     Ancient Town Hotel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bf333357602e12bcb660b2c2b00c6115.setIcon(icon_63331e0aab22aa21f0ebabfae791f993);
+            
+    
+            var marker_f3f2c0a60354edd4cf194d3de61148f0 = L.marker(
+                [15.9253654, 108.3201062],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_04555c8252e22db62f37dc93d142b70c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9430f207d205749512033607d6d22aec = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_de8f105ef54ecd2e6842627a0731fd8c = $(`<div id="html_de8f105ef54ecd2e6842627a0731fd8c" style="width: 100.0%; height: 100.0%;"><b>Seaside bungalow hostel </b><br>Hoi An, Vietnam<br>Your Rating: 5.0/5<br>Google Rating: 4.8<br>Dates: 13/05/25 - 16/05/25 & 18/05/25 - 20/05/25<br><br><i>Comment:</i><br>I loved the place and the people</div>`)[0];
+                popup_9430f207d205749512033607d6d22aec.setContent(html_de8f105ef54ecd2e6842627a0731fd8c);
+            
+        
+
+        marker_f3f2c0a60354edd4cf194d3de61148f0.bindPopup(popup_9430f207d205749512033607d6d22aec)
+        ;
+
+        
+    
+    
+            marker_f3f2c0a60354edd4cf194d3de61148f0.bindTooltip(
+                `<div>
+                     Seaside bungalow hostel 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f3f2c0a60354edd4cf194d3de61148f0.setIcon(icon_04555c8252e22db62f37dc93d142b70c);
+            
+    
+            var marker_d7e8a3b96dfc6884e747a1b7e12c08a8 = L.marker(
+                [15.9327892, 108.5276633],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_6a564d69ef55de7847dfefc1990f5841 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b1f1952684b4c351a0ed1dc208b38308 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f61a58581ca2fc38c7fe117c5b057c79 = $(`<div id="html_f61a58581ca2fc38c7fe117c5b057c79" style="width: 100.0%; height: 100.0%;"><b>Hiep Tung Homestay</b><br>Cham Isles, Vietnam<br>Your Rating: 3.0/5<br>Google Rating: 4.8<br>Dates: 16-05-25 - 18-05-25<br><br><i>Comment:</i><br>Cheap and basic, nice family</div>`)[0];
+                popup_b1f1952684b4c351a0ed1dc208b38308.setContent(html_f61a58581ca2fc38c7fe117c5b057c79);
+            
+        
+
+        marker_d7e8a3b96dfc6884e747a1b7e12c08a8.bindPopup(popup_b1f1952684b4c351a0ed1dc208b38308)
+        ;
+
+        
+    
+    
+            marker_d7e8a3b96dfc6884e747a1b7e12c08a8.bindTooltip(
+                `<div>
+                     Hiep Tung Homestay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d7e8a3b96dfc6884e747a1b7e12c08a8.setIcon(icon_6a564d69ef55de7847dfefc1990f5841);
+            
+    
+            var marker_f961e333d971927d4e1076fbccf572e4 = L.marker(
+                [16.0485323, 108.2466545],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_afb6e68fc77dd5eeedc69bb1fcbf03bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d78ff29cc5846cc107ca1b4e912afde8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0a3b414e00e97bd5a0a94246d3dfdcfc = $(`<div id="html_0a3b414e00e97bd5a0a94246d3dfdcfc" style="width: 100.0%; height: 100.0%;"><b>Rom Casa Hostel</b><br>Da Nang, Vietnam<br>Your Rating: 3.0/5<br>Google Rating: 4.5<br>Dates: 20/05/25 - 22/05/25<br><br><i>Comment:</i><br>Nice beds but too party</div>`)[0];
+                popup_d78ff29cc5846cc107ca1b4e912afde8.setContent(html_0a3b414e00e97bd5a0a94246d3dfdcfc);
+            
+        
+
+        marker_f961e333d971927d4e1076fbccf572e4.bindPopup(popup_d78ff29cc5846cc107ca1b4e912afde8)
+        ;
+
+        
+    
+    
+            marker_f961e333d971927d4e1076fbccf572e4.bindTooltip(
+                `<div>
+                     Rom Casa Hostel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f961e333d971927d4e1076fbccf572e4.setIcon(icon_afb6e68fc77dd5eeedc69bb1fcbf03bf);
+            
+    
+            var marker_7c2858d44484d40763a831a52538e7cf = L.marker(
+                [17.6091221, 106.313292],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_7c4a3a3888b30078df8b975a80f0d3a3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_79b64e872534cc37c9902b551215324e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7d0478c8d99bb461ccc6c5274597e252 = $(`<div id="html_7d0478c8d99bb461ccc6c5274597e252" style="width: 100.0%; height: 100.0%;"><b>Central Backpackers</b><br>Phong Nha, Vietnam<br>Your Rating: 3.0/5<br>Google Rating: 4.6<br>Dates: 22/05/25 - 24/05/25<br><br><i>Comment:</i><br>Okay, busy but I met some nice people</div>`)[0];
+                popup_79b64e872534cc37c9902b551215324e.setContent(html_7d0478c8d99bb461ccc6c5274597e252);
+            
+        
+
+        marker_7c2858d44484d40763a831a52538e7cf.bindPopup(popup_79b64e872534cc37c9902b551215324e)
+        ;
+
+        
+    
+    
+            marker_7c2858d44484d40763a831a52538e7cf.bindTooltip(
+                `<div>
+                     Central Backpackers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7c2858d44484d40763a831a52538e7cf.setIcon(icon_7c4a3a3888b30078df8b975a80f0d3a3);
+            
+    
+            var marker_2ccbcff48cd90d627c590b2fa4e636a0 = L.marker(
+                [20.6601654, 105.0724656],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_7bc5c84ea01a363b22af166967191a39 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6d1d329046d26f2c836f96fa175be8d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_db17004c1bf1a92707300208ddc8d93d = $(`<div id="html_db17004c1bf1a92707300208ddc8d93d" style="width: 100.0%; height: 100.0%;"><b>Nha Tan Homestay & tours</b><br>Mau Chau, Vietnam<br>Your Rating: 3.0/5<br>Google Rating: 4.9<br>Dates: 25/05/25 - 28/05/25<br><br><i>Comment:</i><br>Very beautiful location, nice family!</div>`)[0];
+                popup_c6d1d329046d26f2c836f96fa175be8d.setContent(html_db17004c1bf1a92707300208ddc8d93d);
+            
+        
+
+        marker_2ccbcff48cd90d627c590b2fa4e636a0.bindPopup(popup_c6d1d329046d26f2c836f96fa175be8d)
+        ;
+
+        
+    
+    
+            marker_2ccbcff48cd90d627c590b2fa4e636a0.bindTooltip(
+                `<div>
+                     Nha Tan Homestay & tours
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2ccbcff48cd90d627c590b2fa4e636a0.setIcon(icon_7bc5c84ea01a363b22af166967191a39);
+            
+    
+            var marker_f3592901170c87f07f036a0d78a5128c = L.marker(
+                [21.0314405, 105.8551166],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_413346e21a8be9a07769d4c68f8885bd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e94c1631f084b965e82968a15cd1566 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0f3651cdafb04e68d65cc5437d9d6807 = $(`<div id="html_0f3651cdafb04e68d65cc5437d9d6807" style="width: 100.0%; height: 100.0%;"><b>Valley Hotel & Travel</b><br>Hanoi, Vietnam<br>Your Rating: 1.0/5<br>Google Rating: 3.8<br>Dates: 28/05/25 - 29/05/25<br><br><i>Comment:</i><br>Awful ...</div>`)[0];
+                popup_5e94c1631f084b965e82968a15cd1566.setContent(html_0f3651cdafb04e68d65cc5437d9d6807);
+            
+        
+
+        marker_f3592901170c87f07f036a0d78a5128c.bindPopup(popup_5e94c1631f084b965e82968a15cd1566)
+        ;
+
+        
+    
+    
+            marker_f3592901170c87f07f036a0d78a5128c.bindTooltip(
+                `<div>
+                     Valley Hotel & Travel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f3592901170c87f07f036a0d78a5128c.setIcon(icon_413346e21a8be9a07769d4c68f8885bd);
+            
+    
+            var marker_030e0b279f874d21ea754fbc723066c5 = L.marker(
+                [21.0315644, 105.8552379],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_bd5b775a1677f5568062f7284b1aaa80 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_daca893f3fd062e8ef8e0f7b539ecc50 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_62e0412f0eb28cc1902b2546c3f1cdcb = $(`<div id="html_62e0412f0eb28cc1902b2546c3f1cdcb" style="width: 100.0%; height: 100.0%;"><b>Shinning Central Hotel & Spa</b><br>Hanoi, Vietnam<br>Your Rating: 4.0/5<br>Google Rating: 4.8<br>Dates: 29/05/25 - 31/05/25<br><br><i>Comment:</i><br>Sadly pool was shut</div>`)[0];
+                popup_daca893f3fd062e8ef8e0f7b539ecc50.setContent(html_62e0412f0eb28cc1902b2546c3f1cdcb);
+            
+        
+
+        marker_030e0b279f874d21ea754fbc723066c5.bindPopup(popup_daca893f3fd062e8ef8e0f7b539ecc50)
+        ;
+
+        
+    
+    
+            marker_030e0b279f874d21ea754fbc723066c5.bindTooltip(
+                `<div>
+                     Shinning Central Hotel & Spa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_030e0b279f874d21ea754fbc723066c5.setIcon(icon_bd5b775a1677f5568062f7284b1aaa80);
+            
+    
+            var marker_2163397e752be10f36db5d35d1062617 = L.marker(
+                [22.2971197, 103.9113221],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_9436259476c60f2cdc0e35b33ddf2b82 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3a40504985e000ac4ec49d8f43784560 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_848b671150a4d19fc17c480935a6b6e1 = $(`<div id="html_848b671150a4d19fc17c480935a6b6e1" style="width: 100.0%; height: 100.0%;"><b>D&D Eco SAPA</b><br>Sapa, Vietnam<br>Your Rating: 5.0/5<br>Google Rating: 4.7<br>Dates: 31/05/25 - 04/06/25<br><br><i>Comment:</i><br>Lovely staff & cute dogs</div>`)[0];
+                popup_3a40504985e000ac4ec49d8f43784560.setContent(html_848b671150a4d19fc17c480935a6b6e1);
+            
+        
+
+        marker_2163397e752be10f36db5d35d1062617.bindPopup(popup_3a40504985e000ac4ec49d8f43784560)
+        ;
+
+        
+    
+    
+            marker_2163397e752be10f36db5d35d1062617.bindTooltip(
+                `<div>
+                     D&D Eco SAPA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2163397e752be10f36db5d35d1062617.setIcon(icon_9436259476c60f2cdc0e35b33ddf2b82);
+            
+    
+            var marker_aa197570bb0c17ed115b8f61cd0a4726 = L.marker(
+                [22.8208972, 104.9842465],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_a4ec52fc0f50bdd1072a11f15fc066a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7188fb4a80d696dbda5c00f342e3ec62 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fc16b67744a79b7f6d466c59fecc4e8a = $(`<div id="html_fc16b67744a79b7f6d466c59fecc4e8a" style="width: 100.0%; height: 100.0%;"><b>The Garden Hotel II</b><br>Ha Giang, Vietnam<br>Your Rating: 3.0/5<br>Google Rating: 4.7<br>Dates: 04/06/25 - 05/06/25<br><br><i>Comment:</i><br>nan</div>`)[0];
+                popup_7188fb4a80d696dbda5c00f342e3ec62.setContent(html_fc16b67744a79b7f6d466c59fecc4e8a);
+            
+        
+
+        marker_aa197570bb0c17ed115b8f61cd0a4726.bindPopup(popup_7188fb4a80d696dbda5c00f342e3ec62)
+        ;
+
+        
+    
+    
+            marker_aa197570bb0c17ed115b8f61cd0a4726.bindTooltip(
+                `<div>
+                     The Garden Hotel II
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aa197570bb0c17ed115b8f61cd0a4726.setIcon(icon_a4ec52fc0f50bdd1072a11f15fc066a6);
+            
+    
+            var marker_1aae59ed8c33d8a76d377f4d88499126 = L.marker(
+                [22.819342, 104.9860406],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_58c91e5f1e40b49277a355b942b92fd2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f0fa4e276c231c3cc3f09dc2f81bcf41 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3a551ea23699104f08ac7d0a736ca529 = $(`<div id="html_3a551ea23699104f08ac7d0a736ca529" style="width: 100.0%; height: 100.0%;"><b>Bibis Ha Giang Loop </b><br>Ha Giang, Vietnam<br>Your Rating: 6.0/5<br>Google Rating: 5.0<br>Dates: 05/06/25 - 08/06/25<br><br><i>Comment:</i><br>Amazing views, lovely people, good food and accom</div>`)[0];
+                popup_f0fa4e276c231c3cc3f09dc2f81bcf41.setContent(html_3a551ea23699104f08ac7d0a736ca529);
+            
+        
+
+        marker_1aae59ed8c33d8a76d377f4d88499126.bindPopup(popup_f0fa4e276c231c3cc3f09dc2f81bcf41)
+        ;
+
+        
+    
+    
+            marker_1aae59ed8c33d8a76d377f4d88499126.bindTooltip(
+                `<div>
+                     Bibis Ha Giang Loop 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1aae59ed8c33d8a76d377f4d88499126.setIcon(icon_58c91e5f1e40b49277a355b942b92fd2);
+            
+    
+            var marker_b2fcb33c2dc8d40ebb09bfe806b8bdd2 = L.marker(
+                [20.2114739, 105.934403],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_2cfbbdcc1e0cad931b53f78006f46b32 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71c9d97e92bf4cc4eb6fa98ac3fe7b96 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fdcce115b339396bcc7800db243479bc = $(`<div id="html_fdcce115b339396bcc7800db243479bc" style="width: 100.0%; height: 100.0%;"><b>Tam Coc Green Garden Bungalow</b><br>Ninh Binh, Vietnam<br>Your Rating: 4.0/5<br>Google Rating: 4.4<br>Dates: 08/06/25 - 12/06/25<br><br><i>Comment:</i><br>Cute, friendly & quiet</div>`)[0];
+                popup_71c9d97e92bf4cc4eb6fa98ac3fe7b96.setContent(html_fdcce115b339396bcc7800db243479bc);
+            
+        
+
+        marker_b2fcb33c2dc8d40ebb09bfe806b8bdd2.bindPopup(popup_71c9d97e92bf4cc4eb6fa98ac3fe7b96)
+        ;
+
+        
+    
+    
+            marker_b2fcb33c2dc8d40ebb09bfe806b8bdd2.bindTooltip(
+                `<div>
+                     Tam Coc Green Garden Bungalow
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b2fcb33c2dc8d40ebb09bfe806b8bdd2.setIcon(icon_2cfbbdcc1e0cad931b53f78006f46b32);
+            
+    
+            var marker_687b2fe1e3fc0f9c71feee29281d575c = L.marker(
+                [21.0437707, 105.8450726],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_5a6be384da3b814a84f3b353920c656e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e9b4db47ea290d2957f0ec4187e5f48e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d3337dcb2eefc61f8d5da591fb494b22 = $(`<div id="html_d3337dcb2eefc61f8d5da591fb494b22" style="width: 100.0%; height: 100.0%;"><b>Dragon Legend Luxury Cruise</b><br>Bai Tu Long Bay, Vietnam<br>Your Rating: 5.0/5<br>Google Rating: 4.7<br>Dates: 12/06/25 - 13/06/25<br><br><i>Comment:</i><br>Beautiful ship</div>`)[0];
+                popup_e9b4db47ea290d2957f0ec4187e5f48e.setContent(html_d3337dcb2eefc61f8d5da591fb494b22);
+            
+        
+
+        marker_687b2fe1e3fc0f9c71feee29281d575c.bindPopup(popup_e9b4db47ea290d2957f0ec4187e5f48e)
+        ;
+
+        
+    
+    
+            marker_687b2fe1e3fc0f9c71feee29281d575c.bindTooltip(
+                `<div>
+                     Dragon Legend Luxury Cruise
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_687b2fe1e3fc0f9c71feee29281d575c.setIcon(icon_5a6be384da3b814a84f3b353920c656e);
+            
+    
+            var marker_8accdce8863f468b6b64220f006eb6b1 = L.marker(
+                [21.0289234, 105.8447628],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_03fcdf1fd35f9e5d993517f5c5fa2e2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f3d006cba1423c5de997ba2147e2d0b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b020608f25d92aab84fcb3f51a141a29 = $(`<div id="html_b020608f25d92aab84fcb3f51a141a29" style="width: 100.0%; height: 100.0%;"><b>San Palace Hotel</b><br>Hanoi, Vietnam<br>Your Rating: 5.0/5<br>Google Rating: 4.8<br>Dates: 13/06/25 - 16/06/25<br><br><i>Comment:</i><br>Close to train street, roof top pool & bar!</div>`)[0];
+                popup_1f3d006cba1423c5de997ba2147e2d0b.setContent(html_b020608f25d92aab84fcb3f51a141a29);
+            
+        
+
+        marker_8accdce8863f468b6b64220f006eb6b1.bindPopup(popup_1f3d006cba1423c5de997ba2147e2d0b)
+        ;
+
+        
+    
+    
+            marker_8accdce8863f468b6b64220f006eb6b1.bindTooltip(
+                `<div>
+                     San Palace Hotel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8accdce8863f468b6b64220f006eb6b1.setIcon(icon_03fcdf1fd35f9e5d993517f5c5fa2e2c);
+            
+    
+            var marker_1f127775d754acdc6e281c60dd0498f8 = L.marker(
+                [19.8985456, 102.1749624],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_6425c35cd80d68079c02582de17dc4af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_25eb85aabf9d3efce9b62aa572f4cdfc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae14d13ba22e0afe3f82147c2136533a = $(`<div id="html_ae14d13ba22e0afe3f82147c2136533a" style="width: 100.0%; height: 100.0%;"><b>The Namkhan</b><br>Luang Prabang, Laos<br>Your Rating: 5.0/5<br>Google Rating: 4.7<br>Dates: 16/06/25 - 20/06/25<br><br><i>Comment:</i><br>4 Nights in luxury </div>`)[0];
+                popup_25eb85aabf9d3efce9b62aa572f4cdfc.setContent(html_ae14d13ba22e0afe3f82147c2136533a);
+            
+        
+
+        marker_1f127775d754acdc6e281c60dd0498f8.bindPopup(popup_25eb85aabf9d3efce9b62aa572f4cdfc)
+        ;
+
+        
+    
+    
+            marker_1f127775d754acdc6e281c60dd0498f8.bindTooltip(
+                `<div>
+                     The Namkhan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1f127775d754acdc6e281c60dd0498f8.setIcon(icon_6425c35cd80d68079c02582de17dc4af);
+            
+    
+            var marker_f6acf06d124dbca77263e631e0dd4e69 = L.marker(
+                [19.8911035, 102.1337501],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_d4f3449b6729fc7c42e3d98fe8aa8839 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e953b256601e15c6574704fae565dc93 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_91d18756fd831291f9fc9211b02e76f8 = $(`<div id="html_91d18756fd831291f9fc9211b02e76f8" style="width: 100.0%; height: 100.0%;"><b>Golden Sun boutique hotel</b><br>Luang Prabang, Laos<br>Your Rating: 3.0/5<br>Google Rating: 4.2<br>Dates: 20/06/25 - 21/06/25<br><br><i>Comment:</i><br>good location!</div>`)[0];
+                popup_e953b256601e15c6574704fae565dc93.setContent(html_91d18756fd831291f9fc9211b02e76f8);
+            
+        
+
+        marker_f6acf06d124dbca77263e631e0dd4e69.bindPopup(popup_e953b256601e15c6574704fae565dc93)
+        ;
+
+        
+    
+    
+            marker_f6acf06d124dbca77263e631e0dd4e69.bindTooltip(
+                `<div>
+                     Golden Sun boutique hotel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f6acf06d124dbca77263e631e0dd4e69.setIcon(icon_d4f3449b6729fc7c42e3d98fe8aa8839);
+            
+    
+            var marker_40ac68f4c2c065a5e70a2c8f3c2bf86c = L.marker(
+                [19.8922039, 101.1285442],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_49c3af882da459adf86cad5a260a89af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd06eeed605f130d4b467f7bcf1fe11f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_35f40d03384baef02bc8c833588fed35 = $(`<div id="html_35f40d03384baef02bc8c833588fed35" style="width: 100.0%; height: 100.0%;"><b>Mekong Riverside Lodge</b><br>Pakbeng, Laos<br>Your Rating: 3.0/5<br>Google Rating: 4.2<br>Dates: 21/06/25 - 23/06/25<br><br><i>Comment:</i><br>Nice view from my balcony over the river! Basic room, comfy and clean.</div>`)[0];
+                popup_dd06eeed605f130d4b467f7bcf1fe11f.setContent(html_35f40d03384baef02bc8c833588fed35);
+            
+        
+
+        marker_40ac68f4c2c065a5e70a2c8f3c2bf86c.bindPopup(popup_dd06eeed605f130d4b467f7bcf1fe11f)
+        ;
+
+        
+    
+    
+            marker_40ac68f4c2c065a5e70a2c8f3c2bf86c.bindTooltip(
+                `<div>
+                     Mekong Riverside Lodge
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_40ac68f4c2c065a5e70a2c8f3c2bf86c.setIcon(icon_49c3af882da459adf86cad5a260a89af);
+            
+    
+            var marker_922d93e7953ce41ebcef8f73f66cd948 = L.marker(
+                [20.2766658, 100.4115312],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_bb7083791a51c4d8ab7311aa8458010c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0e0f2e7ff8d060ac866c529d5b4b96b7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_916c43d74273b4aff271c078587f1e06 = $(`<div id="html_916c43d74273b4aff271c078587f1e06" style="width: 100.0%; height: 100.0%;"><b>Thadan Guesthouse</b><br>Huay Xai, Laos<br>Your Rating: 3.0/5<br>Google Rating: 3.7<br>Dates: 23/06/25 -24/06/25<br><br><i>Comment:</i><br>room was clean & comfy, staff a little unfriendly</div>`)[0];
+                popup_0e0f2e7ff8d060ac866c529d5b4b96b7.setContent(html_916c43d74273b4aff271c078587f1e06);
+            
+        
+
+        marker_922d93e7953ce41ebcef8f73f66cd948.bindPopup(popup_0e0f2e7ff8d060ac866c529d5b4b96b7)
+        ;
+
+        
+    
+    
+            marker_922d93e7953ce41ebcef8f73f66cd948.bindTooltip(
+                `<div>
+                     Thadan Guesthouse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_922d93e7953ce41ebcef8f73f66cd948.setIcon(icon_bb7083791a51c4d8ab7311aa8458010c);
+            
+    
+            var marker_aa76d0eae34e31b428eb9257b0b41fa5 = L.marker(
+                [19.9045338, 99.830175],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_d07f4153ffa73dcbc92af48bffa3244a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_072ebf63333f59d646a9d3110a8b26f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_53204b3cca747edaa5fc1cba1518842b = $(`<div id="html_53204b3cca747edaa5fc1cba1518842b" style="width: 100.0%; height: 100.0%;"><b>Mercy Hostel</b><br>Chiang Rai, Thailand<br>Your Rating: 4.0/5<br>Google Rating: 4.7<br>Dates: 24/06/25 - 25/06/25<br><br><i>Comment:</i><br>6 bed female dorm, nice hostel with a samll gym & shallow pool. Very quiet but met some nice girls in the room.</div>`)[0];
+                popup_072ebf63333f59d646a9d3110a8b26f5.setContent(html_53204b3cca747edaa5fc1cba1518842b);
+            
+        
+
+        marker_aa76d0eae34e31b428eb9257b0b41fa5.bindPopup(popup_072ebf63333f59d646a9d3110a8b26f5)
+        ;
+
+        
+    
+    
+            marker_aa76d0eae34e31b428eb9257b0b41fa5.bindTooltip(
+                `<div>
+                     Mercy Hostel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aa76d0eae34e31b428eb9257b0b41fa5.setIcon(icon_d07f4153ffa73dcbc92af48bffa3244a);
+            
+    
+            var marker_15da20f454014c4ee94ef8b3bcc8b154 = L.marker(
+                [18.7803672, 98.9881056],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_ea604bb5aeabc46531201d0c7d2fa0a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_306558ddcf8531e3995f60acb335e7b6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_07d727b2247b841dc5199b265c68bd67 = $(`<div id="html_07d727b2247b841dc5199b265c68bd67" style="width: 100.0%; height: 100.0%;"><b>Family home 2</b><br>Chiang Mai , Thailand<br>Your Rating: 3.0/5<br>Google Rating: 4.8<br>Dates: 25/06/25 - 27/06/25<br><br><i>Comment:</i><br>Hostel was fine... a little too boyish</div>`)[0];
+                popup_306558ddcf8531e3995f60acb335e7b6.setContent(html_07d727b2247b841dc5199b265c68bd67);
+            
+        
+
+        marker_15da20f454014c4ee94ef8b3bcc8b154.bindPopup(popup_306558ddcf8531e3995f60acb335e7b6)
+        ;
+
+        
+    
+    
+            marker_15da20f454014c4ee94ef8b3bcc8b154.bindTooltip(
+                `<div>
+                     Family home 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_15da20f454014c4ee94ef8b3bcc8b154.setIcon(icon_ea604bb5aeabc46531201d0c7d2fa0a5);
+            
+    
+            var marker_2aebada81374847fc889bf853a4845ba = L.marker(
+                [18.7847583, 98.9872098],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_1d0bf53d265291944b3526091a7c195f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_54c3426dfc06ec2634b4157bfa3b8625 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8010a831cf08f3a1067513fc3dc75d7f = $(`<div id="html_8010a831cf08f3a1067513fc3dc75d7f" style="width: 100.0%; height: 100.0%;"><b>Lullaby Hostel</b><br>Chiang Mai, Thailand<br>Your Rating: 4.0/5<br>Google Rating: 4.7<br>Dates: 27/06/25 - 29/06/25<br><br><i>Comment:</i><br>Nice hostel, quiet but fairly social</div>`)[0];
+                popup_54c3426dfc06ec2634b4157bfa3b8625.setContent(html_8010a831cf08f3a1067513fc3dc75d7f);
+            
+        
+
+        marker_2aebada81374847fc889bf853a4845ba.bindPopup(popup_54c3426dfc06ec2634b4157bfa3b8625)
+        ;
+
+        
+    
+    
+            marker_2aebada81374847fc889bf853a4845ba.bindTooltip(
+                `<div>
+                     Lullaby Hostel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2aebada81374847fc889bf853a4845ba.setIcon(icon_1d0bf53d265291944b3526091a7c195f);
+            
+    
+            var marker_3415f04be2eba0efa2646571089c8a11 = L.marker(
+                [3.1437918, 101.7041942],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_6c31a927bd840fc1c9154434c1d0d4fc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a786395f84507db187e1fee50908f0d9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd5cc9393412bb5ed3d320a122104b65 = $(`<div id="html_fd5cc9393412bb5ed3d320a122104b65" style="width: 100.0%; height: 100.0%;"><b>The Robertson Bukit Bintang Luxe Suites</b><br>Kuala Lumpur, Malaysia<br>Your Rating: 4.0/5<br>Google Rating: 4.0<br>Dates: 29/06/25 - 04/07/25<br><br><i>Comment:</i><br>Swimming pool!</div>`)[0];
+                popup_a786395f84507db187e1fee50908f0d9.setContent(html_fd5cc9393412bb5ed3d320a122104b65);
+            
+        
+
+        marker_3415f04be2eba0efa2646571089c8a11.bindPopup(popup_a786395f84507db187e1fee50908f0d9)
+        ;
+
+        
+    
+    
+            marker_3415f04be2eba0efa2646571089c8a11.bindTooltip(
+                `<div>
+                     The Robertson Bukit Bintang Luxe Suites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3415f04be2eba0efa2646571089c8a11.setIcon(icon_6c31a927bd840fc1c9154434c1d0d4fc);
+            
+    
+            var marker_bc563d0cb5e3a89d2adbab9d6a946a6f = L.marker(
+                [5.4143358, 100.3351733],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_e9e43867728a1ed949e45c422a1c4b0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f6faa8f2db29e37625f06f1ad3950bd0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_02d375d4292ab66f5893d38c46d35761 = $(`<div id="html_02d375d4292ab66f5893d38c46d35761" style="width: 100.0%; height: 100.0%;"><b>Chuan Heang Room - Armenian stree Air bnb</b><br>George Town, Malaysia<br>Your Rating: 4.0/5<br>Google Rating: 4.7<br>Dates: 04/07/25 - 08/07/25<br><br><i>Comment:</i><br>Fab location and lovely interior</div>`)[0];
+                popup_f6faa8f2db29e37625f06f1ad3950bd0.setContent(html_02d375d4292ab66f5893d38c46d35761);
+            
+        
+
+        marker_bc563d0cb5e3a89d2adbab9d6a946a6f.bindPopup(popup_f6faa8f2db29e37625f06f1ad3950bd0)
+        ;
+
+        
+    
+    
+            marker_bc563d0cb5e3a89d2adbab9d6a946a6f.bindTooltip(
+                `<div>
+                     Chuan Heang Room - Armenian stree Air bnb
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bc563d0cb5e3a89d2adbab9d6a946a6f.setIcon(icon_e9e43867728a1ed949e45c422a1c4b0b);
+            
+    
+            var marker_8ee9bfabc8c92b8479c7398e5e66a73c = L.marker(
+                [6.4343631, 99.79981],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_8c2f856d651a0ac6738e2e03646858f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3b57d387b03e3a7137d678184a94af41 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_98c3788b5d3a92b28b826213b36c9d21 = $(`<div id="html_98c3788b5d3a92b28b826213b36c9d21" style="width: 100.0%; height: 100.0%;"><b>Tanjung Rhu Villas, the Bohimian</b><br>Langkawi, Malaysia<br>Your Rating: 3.0/5<br>Google Rating: 4.4<br>Dates: 08/07/25 - 13/07/25<br><br><i>Comment:</i><br>Cute place! Slightly impractical layout - steep stairs. Fab location!</div>`)[0];
+                popup_3b57d387b03e3a7137d678184a94af41.setContent(html_98c3788b5d3a92b28b826213b36c9d21);
+            
+        
+
+        marker_8ee9bfabc8c92b8479c7398e5e66a73c.bindPopup(popup_3b57d387b03e3a7137d678184a94af41)
+        ;
+
+        
+    
+    
+            marker_8ee9bfabc8c92b8479c7398e5e66a73c.bindTooltip(
+                `<div>
+                     Tanjung Rhu Villas, the Bohimian
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8ee9bfabc8c92b8479c7398e5e66a73c.setIcon(icon_8c2f856d651a0ac6738e2e03646858f5);
+            
+    
+            var marker_79e6c5118af1a962a14caac178f50901 = L.marker(
+                [2.7682361, 101.6972111],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_ba7bfbf867fdbaca2630b08a93e327a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1476a11f6ee538b9e6fc58734727d72b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55bc8ea455960b9c8a8364109bc923b4 = $(`<div id="html_55bc8ea455960b9c8a8364109bc923b4" style="width: 100.0%; height: 100.0%;"><b>Bangau - capsual hostel</b><br>Kuala Lumpur, Malaysia<br>Your Rating: 2.0/5<br>Google Rating: 4.1<br>Dates: 13/07/25 - 14/07/25<br><br><i>Comment:</i><br>Spenny for what it was but convienient</div>`)[0];
+                popup_1476a11f6ee538b9e6fc58734727d72b.setContent(html_55bc8ea455960b9c8a8364109bc923b4);
+            
+        
+
+        marker_79e6c5118af1a962a14caac178f50901.bindPopup(popup_1476a11f6ee538b9e6fc58734727d72b)
+        ;
+
+        
+    
+    
+            marker_79e6c5118af1a962a14caac178f50901.bindTooltip(
+                `<div>
+                     Bangau - capsual hostel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_79e6c5118af1a962a14caac178f50901.setIcon(icon_ba7bfbf867fdbaca2630b08a93e327a4);
+            
+    
+            var marker_448cc4656e510a61494ad519537f9081 = L.marker(
+                [5.9783121, 116.074087],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_365f62878e102c3b2efb721fd24fc6c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1b36e524a7442eeec1bf9f4e90b746ab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_90af3b32f1f567941cdcfe2811aa45e5 = $(`<div id="html_90af3b32f1f567941cdcfe2811aa45e5" style="width: 100.0%; height: 100.0%;"><b>Lavendar Lodge</b><br>Kota Kinabalu, Malaysia<br>Your Rating: 3.0/5<br>Google Rating: 4.0<br>Dates: 14/07/25 - 15/07/25 & 21/07/25 - 22/07/25 & 25/07/12 - 29/07/25<br><br><i>Comment:</i><br>Private room, was basic but okay</div>`)[0];
+                popup_1b36e524a7442eeec1bf9f4e90b746ab.setContent(html_90af3b32f1f567941cdcfe2811aa45e5);
+            
+        
+
+        marker_448cc4656e510a61494ad519537f9081.bindPopup(popup_1b36e524a7442eeec1bf9f4e90b746ab)
+        ;
+
+        
+    
+    
+            marker_448cc4656e510a61494ad519537f9081.bindTooltip(
+                `<div>
+                     Lavendar Lodge
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_448cc4656e510a61494ad519537f9081.setIcon(icon_365f62878e102c3b2efb721fd24fc6c4);
+            
+    
+            var marker_8878ea5a1b0dd430bd0fda0767ddda82 = L.marker(
+                [6.021268999999999, 116.4895459],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_81ee70e078cfdbf4a9108071551209c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d9667e340b1edf48ab4535c271c15645 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e6fb945fc8d55dd825319a8de0f19355 = $(`<div id="html_e6fb945fc8d55dd825319a8de0f19355" style="width: 100.0%; height: 100.0%;"><b>Kiau Village Homestay</b><br>Kiau Village, Malaysia<br>Your Rating: 3.0/5<br>Google Rating: 4.1<br>Dates: 15/07/25 - 16/07/25<br><br><i>Comment:</i><br>Basic but lovely host!</div>`)[0];
+                popup_d9667e340b1edf48ab4535c271c15645.setContent(html_e6fb945fc8d55dd825319a8de0f19355);
+            
+        
+
+        marker_8878ea5a1b0dd430bd0fda0767ddda82.bindPopup(popup_d9667e340b1edf48ab4535c271c15645)
+        ;
+
+        
+    
+    
+            marker_8878ea5a1b0dd430bd0fda0767ddda82.bindTooltip(
+                `<div>
+                     Kiau Village Homestay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8878ea5a1b0dd430bd0fda0767ddda82.setIcon(icon_81ee70e078cfdbf4a9108071551209c8);
+            
+    
+            var marker_272bfa12acfe443579f00948cb84ed35 = L.marker(
+                [5.8666847, 117.9555179],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_58bb8559855b9b70d9f5dcb959e8329e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e09ab34d690fededc79844698ee19151 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7df8271578a69a4196637e3d173b0e65 = $(`<div id="html_7df8271578a69a4196637e3d173b0e65" style="width: 100.0%; height: 100.0%;"><b>Sepilok Forest Edge Resort</b><br>Sepilok, Malaysia<br>Your Rating: 4.0/5<br>Google Rating: 4.5<br>Dates: 16/07/25 - 17/07/25<br><br><i>Comment:</i><br>nan</div>`)[0];
+                popup_e09ab34d690fededc79844698ee19151.setContent(html_7df8271578a69a4196637e3d173b0e65);
+            
+        
+
+        marker_272bfa12acfe443579f00948cb84ed35.bindPopup(popup_e09ab34d690fededc79844698ee19151)
+        ;
+
+        
+    
+    
+            marker_272bfa12acfe443579f00948cb84ed35.bindTooltip(
+                `<div>
+                     Sepilok Forest Edge Resort
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_272bfa12acfe443579f00948cb84ed35.setIcon(icon_58bb8559855b9b70d9f5dcb959e8329e);
+            
+    
+            var marker_339c28b574202016406d536bf23105e0 = L.marker(
+                [5.4949574, 118.2059786],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_ec28b19b319e1ad950414b1b11e4f611 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_176345efce06c18db2a0c36d30fa4cd4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9346cfa2dcc543156e6acfae888e4ac6 = $(`<div id="html_9346cfa2dcc543156e6acfae888e4ac6" style="width: 100.0%; height: 100.0%;"><b>Tanini Lodge </b><br>Kinabatangan, Malaysia<br>Your Rating: 3.0/5<br>Google Rating: 4.5<br>Dates: 17/07/25 - 19/07/25<br><br><i>Comment:</i><br>nan</div>`)[0];
+                popup_176345efce06c18db2a0c36d30fa4cd4.setContent(html_9346cfa2dcc543156e6acfae888e4ac6);
+            
+        
+
+        marker_339c28b574202016406d536bf23105e0.bindPopup(popup_176345efce06c18db2a0c36d30fa4cd4)
+        ;
+
+        
+    
+    
+            marker_339c28b574202016406d536bf23105e0.bindTooltip(
+                `<div>
+                     Tanini Lodge 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_339c28b574202016406d536bf23105e0.setIcon(icon_ec28b19b319e1ad950414b1b11e4f611);
+            
+    
+            var marker_92b88ef34c54424923382fda02054595 = L.marker(
+                [4.9647974, 117.8050773],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_419988330794a962d6cb7ad260977065 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cc8089fd60d0228ef005a4de5f986053 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f311c6bb11a3a13496105b87965161ea = $(`<div id="html_f311c6bb11a3a13496105b87965161ea" style="width: 100.0%; height: 100.0%;"><b>Danum Valley Field Center</b><br>Danum Valley, Malaysia<br>Your Rating: 3.0/5<br>Google Rating: 4.3<br>Dates: 19/07/25 - 21/07/25<br><br><i>Comment:</i><br>Twin room - Hot!</div>`)[0];
+                popup_cc8089fd60d0228ef005a4de5f986053.setContent(html_f311c6bb11a3a13496105b87965161ea);
+            
+        
+
+        marker_92b88ef34c54424923382fda02054595.bindPopup(popup_cc8089fd60d0228ef005a4de5f986053)
+        ;
+
+        
+    
+    
+            marker_92b88ef34c54424923382fda02054595.bindTooltip(
+                `<div>
+                     Danum Valley Field Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_92b88ef34c54424923382fda02054595.setIcon(icon_419988330794a962d6cb7ad260977065);
+            
+    
+            var marker_5529619d78ad53924c685b8157b1b9c8 = L.marker(
+                [4.09207, 114.8958021],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_3e60f251426d447aeda5c774acf93b12 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2112cea469ea40537c28d3cd4039a9b6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4e364bbfc31baa5b08266080209af996 = $(`<div id="html_4e364bbfc31baa5b08266080209af996" style="width: 100.0%; height: 100.0%;"><b>Mulu HQ Hostel </b><br>Mulu National Park, Malaysia<br>Your Rating: 3.0/5<br>Google Rating: 4.8<br>Dates: 22/07/25 - 25/07/25<br><br><i>Comment:</i><br>Nice and Quiet & a fab location in the park</div>`)[0];
+                popup_2112cea469ea40537c28d3cd4039a9b6.setContent(html_4e364bbfc31baa5b08266080209af996);
+            
+        
+
+        marker_5529619d78ad53924c685b8157b1b9c8.bindPopup(popup_2112cea469ea40537c28d3cd4039a9b6)
+        ;
+
+        
+    
+    
+            marker_5529619d78ad53924c685b8157b1b9c8.bindTooltip(
+                `<div>
+                     Mulu HQ Hostel 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5529619d78ad53924c685b8157b1b9c8.setIcon(icon_3e60f251426d447aeda5c774acf93b12);
+            
+    
+            var marker_61e9e2eb53865534f04b66cab9b82a3e = L.marker(
+                [5.9874306, 116.0789855],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_2c520947352ea17cc79ea1223a1288fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44b71ac21e215dfbf6b49a159358a2dd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8c5d40084b21e06355b54133d04d080b = $(`<div id="html_8c5d40084b21e06355b54133d04d080b" style="width: 100.0%; height: 100.0%;"><b>Jirran Hostel</b><br>Kota Kinabalu, Malaysia<br>Your Rating: 3.0/5<br>Google Rating: 4.7<br>Dates: 29/07/25 - 01/08/25<br><br><i>Comment:</i><br>Not bad, would have been a good place to stay if I wasnt ill</div>`)[0];
+                popup_44b71ac21e215dfbf6b49a159358a2dd.setContent(html_8c5d40084b21e06355b54133d04d080b);
+            
+        
+
+        marker_61e9e2eb53865534f04b66cab9b82a3e.bindPopup(popup_44b71ac21e215dfbf6b49a159358a2dd)
+        ;
+
+        
+    
+    
+            marker_61e9e2eb53865534f04b66cab9b82a3e.bindTooltip(
+                `<div>
+                     Jirran Hostel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_61e9e2eb53865534f04b66cab9b82a3e.setIcon(icon_2c520947352ea17cc79ea1223a1288fa);
+            
+    
+            var marker_1d9d7e8c6043bb6f4d18b46e19715989 = L.marker(
+                [5.912872999999999, 116.0642438],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_0789452303848dcca5e8d49789090904 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca8b8ff19e7342a446bd774b3e241dbb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a97adfb9f570a29893e7baf204d48cc1 = $(`<div id="html_a97adfb9f570a29893e7baf204d48cc1" style="width: 100.0%; height: 100.0%;"><b>K avenue apartments</b><br>Kota Kinabalu, Malaysia<br>Your Rating: 2.0/5<br>Google Rating: 3.3<br>Dates: 01/08/25 - 05/08/25<br><br><i>Comment:</i><br>Fine but the bathroom stunk</div>`)[0];
+                popup_ca8b8ff19e7342a446bd774b3e241dbb.setContent(html_a97adfb9f570a29893e7baf204d48cc1);
+            
+        
+
+        marker_1d9d7e8c6043bb6f4d18b46e19715989.bindPopup(popup_ca8b8ff19e7342a446bd774b3e241dbb)
+        ;
+
+        
+    
+    
+            marker_1d9d7e8c6043bb6f4d18b46e19715989.bindTooltip(
+                `<div>
+                     K avenue apartments
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1d9d7e8c6043bb6f4d18b46e19715989.setIcon(icon_0789452303848dcca5e8d49789090904);
+            
+    
+            var marker_8702c1e672465200750144956722463a = L.marker(
+                [-8.6482408, 115.1540035],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_7850e70c99eba81cd8fe1a00bb5708f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f41b25724cabe8c6cc66aedd686a2137 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5865f393d819e8eaf36fe1bab0e47fca = $(`<div id="html_5865f393d819e8eaf36fe1bab0e47fca" style="width: 100.0%; height: 100.0%;"><b>Surg wg</b><br>Canggu, Indonesia<br>Your Rating: 4.0/5<br>Google Rating: 4.8<br>Dates: 05/08/25 - 10/08/25<br><br><i>Comment:</i><br>Nice dorms!!</div>`)[0];
+                popup_f41b25724cabe8c6cc66aedd686a2137.setContent(html_5865f393d819e8eaf36fe1bab0e47fca);
+            
+        
+
+        marker_8702c1e672465200750144956722463a.bindPopup(popup_f41b25724cabe8c6cc66aedd686a2137)
+        ;
+
+        
+    
+    
+            marker_8702c1e672465200750144956722463a.bindTooltip(
+                `<div>
+                     Surg wg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8702c1e672465200750144956722463a.setIcon(icon_7850e70c99eba81cd8fe1a00bb5708f1);
+            
+    
+            var marker_ca3b2f871c38c1b959dcc6885c4e4283 = L.marker(
+                [-8.516157999999999, 115.2622314],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_362394fe73ab85c8993f74526b66de0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_332d631f2c29f8deacbd7ae93b05325f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_540340e9e9b707384d70770d3a88ccb0 = $(`<div id="html_540340e9e9b707384d70770d3a88ccb0" style="width: 100.0%; height: 100.0%;"><b>Sunshine Village House </b><br>Ubud, Indonesia<br>Your Rating: 5.0/5<br>Google Rating: 4.9<br>Dates: 10/08/25 - 13/08/25<br><br><i>Comment:</i><br>One of the nicest hostels Ive stayed at</div>`)[0];
+                popup_332d631f2c29f8deacbd7ae93b05325f.setContent(html_540340e9e9b707384d70770d3a88ccb0);
+            
+        
+
+        marker_ca3b2f871c38c1b959dcc6885c4e4283.bindPopup(popup_332d631f2c29f8deacbd7ae93b05325f)
+        ;
+
+        
+    
+    
+            marker_ca3b2f871c38c1b959dcc6885c4e4283.bindTooltip(
+                `<div>
+                     Sunshine Village House 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ca3b2f871c38c1b959dcc6885c4e4283.setIcon(icon_362394fe73ab85c8993f74526b66de0e);
+            
+    
+            var marker_24ade8641685049f7bfaf46405d10efd = L.marker(
+                [-8.2781938, 115.5924153],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_cd67122bc695fe4236349b1ebdd85b92 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b82cd649017d11eab3a4ffb3371e2179 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c7c4e00f2c8129356f2c703639b2a190 = $(`<div id="html_c7c4e00f2c8129356f2c703639b2a190" style="width: 100.0%; height: 100.0%;"><b>Bubus hoestay tulumben</b><br>Tulamben, Indonesia<br>Your Rating: 4.0/5<br>Google Rating: 4.7<br>Dates: 13/08/25 - 17/08/25<br><br><i>Comment:</i><br>Dive hostel - comfy beds</div>`)[0];
+                popup_b82cd649017d11eab3a4ffb3371e2179.setContent(html_c7c4e00f2c8129356f2c703639b2a190);
+            
+        
+
+        marker_24ade8641685049f7bfaf46405d10efd.bindPopup(popup_b82cd649017d11eab3a4ffb3371e2179)
+        ;
+
+        
+    
+    
+            marker_24ade8641685049f7bfaf46405d10efd.bindTooltip(
+                `<div>
+                     Bubus hoestay tulumben
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_24ade8641685049f7bfaf46405d10efd.setIcon(icon_cd67122bc695fe4236349b1ebdd85b92);
+            
+    
+            var marker_853b0054f9f8ce195885434d29f74ee1 = L.marker(
+                [-8.1517275, 115.035892],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_327ac8a4fbe5109b65dbc100306ea203 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6ccc6f30a1c426b60c302c352db55ec3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b6ef37284876efc075a4aa0f1780d313 = $(`<div id="html_b6ef37284876efc075a4aa0f1780d313" style="width: 100.0%; height: 100.0%;"><b>Hotel Suma</b><br>Lovina, Indonesia<br>Your Rating: 4.0/5<br>Google Rating: 4.2<br>Dates: 17/08/25 - 20/08/25<br><br><i>Comment:</i><br>Cute hotel, found on airbnb</div>`)[0];
+                popup_6ccc6f30a1c426b60c302c352db55ec3.setContent(html_b6ef37284876efc075a4aa0f1780d313);
+            
+        
+
+        marker_853b0054f9f8ce195885434d29f74ee1.bindPopup(popup_6ccc6f30a1c426b60c302c352db55ec3)
+        ;
+
+        
+    
+    
+            marker_853b0054f9f8ce195885434d29f74ee1.bindTooltip(
+                `<div>
+                     Hotel Suma
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_853b0054f9f8ce195885434d29f74ee1.setIcon(icon_327ac8a4fbe5109b65dbc100306ea203);
+            
+    
+            var marker_d7916c78ada2b239137e31662a16d428 = L.marker(
+                [-8.5055521, 115.2577724],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_a57a842ba6ba08fd052f260fb35ba5ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3d595a257c578b44f412f9fb92649303 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c14c0ceb4ea95849d2e4b10b506a5b02 = $(`<div id="html_c14c0ceb4ea95849d2e4b10b506a5b02" style="width: 100.0%; height: 100.0%;"><b>In da Lodge</b><br>Ubud, Indonesia<br>Your Rating: 4.0/5<br>Google Rating: 4.0<br>Dates: 20/08/25 - 22/08/25<br><br><i>Comment:</i><br>Basic but nice</div>`)[0];
+                popup_3d595a257c578b44f412f9fb92649303.setContent(html_c14c0ceb4ea95849d2e4b10b506a5b02);
+            
+        
+
+        marker_d7916c78ada2b239137e31662a16d428.bindPopup(popup_3d595a257c578b44f412f9fb92649303)
+        ;
+
+        
+    
+    
+            marker_d7916c78ada2b239137e31662a16d428.bindTooltip(
+                `<div>
+                     In da Lodge
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d7916c78ada2b239137e31662a16d428.setIcon(icon_a57a842ba6ba08fd052f260fb35ba5ae);
+            
+    
+            var marker_25abdbb8acb55f3fdda446a68de8e706 = L.marker(
+                [-8.4968273, 119.8806872],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_10a3128a094338bd4b956cd1d17eb08d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ee4f27097c597516636afffb9d5069e5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8c61b6b44d9503fe0b0bf9b256b4ea1e = $(`<div id="html_8c61b6b44d9503fe0b0bf9b256b4ea1e" style="width: 100.0%; height: 100.0%;"><b>Bajo bunkhouse</b><br>Labuan Bajo, Indonesia<br>Your Rating: 3.0/5<br>Google Rating: 4.6<br>Dates: 22/08/25 - 25/08/25<br><br><i>Comment:</i><br>Basic and not social</div>`)[0];
+                popup_ee4f27097c597516636afffb9d5069e5.setContent(html_8c61b6b44d9503fe0b0bf9b256b4ea1e);
+            
+        
+
+        marker_25abdbb8acb55f3fdda446a68de8e706.bindPopup(popup_ee4f27097c597516636afffb9d5069e5)
+        ;
+
+        
+    
+    
+            marker_25abdbb8acb55f3fdda446a68de8e706.bindTooltip(
+                `<div>
+                     Bajo bunkhouse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_25abdbb8acb55f3fdda446a68de8e706.setIcon(icon_10a3128a094338bd4b956cd1d17eb08d);
+            
+    
+            var marker_de242a4984325f493e75028dcabae94b = L.marker(
+                [-8.495224499999999, 119.8786474],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_76873a4acaf857b19eeebc187c2d4be4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_117b6499b4f1e2b1b510164607c50171 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_88202959bc0c9951cf3a5d5de3062466 = $(`<div id="html_88202959bc0c9951cf3a5d5de3062466" style="width: 100.0%; height: 100.0%;"><b>Wunderpus Liveaboard - Mimic</b><br>Komodo National Park, Indonesia<br>Your Rating: 5.0/5<br>Google Rating: 5.0<br>Dates: 25/08/25 - 28/08/25<br><br><i>Comment:</i><br>Small boat, slept under the stars, gorgeous</div>`)[0];
+                popup_117b6499b4f1e2b1b510164607c50171.setContent(html_88202959bc0c9951cf3a5d5de3062466);
+            
+        
+
+        marker_de242a4984325f493e75028dcabae94b.bindPopup(popup_117b6499b4f1e2b1b510164607c50171)
+        ;
+
+        
+    
+    
+            marker_de242a4984325f493e75028dcabae94b.bindTooltip(
+                `<div>
+                     Wunderpus Liveaboard - Mimic
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_de242a4984325f493e75028dcabae94b.setIcon(icon_76873a4acaf857b19eeebc187c2d4be4);
+            
+    
+            var marker_6791ce3bc0c653b804919bbe2843575e = L.marker(
+                [-8.4827125, 119.8802031],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_85a2a4921d9f6849f79f4b915e71c64a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a30d6e5a5733c2dcd33b4cf2933dd370 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a11b9eff0c84993f6b70f8e3e64ea950 = $(`<div id="html_a11b9eff0c84993f6b70f8e3e64ea950" style="width: 100.0%; height: 100.0%;"><b>Golo Hilltop Hotel</b><br>Labuan Bajo, Indonesia<br>Your Rating: 4.0/5<br>Google Rating: 4.5<br>Dates: 28/08/25 - 30/08/25<br><br><i>Comment:</i><br>Lovely view</div>`)[0];
+                popup_a30d6e5a5733c2dcd33b4cf2933dd370.setContent(html_a11b9eff0c84993f6b70f8e3e64ea950);
+            
+        
+
+        marker_6791ce3bc0c653b804919bbe2843575e.bindPopup(popup_a30d6e5a5733c2dcd33b4cf2933dd370)
+        ;
+
+        
+    
+    
+            marker_6791ce3bc0c653b804919bbe2843575e.bindTooltip(
+                `<div>
+                     Golo Hilltop Hotel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6791ce3bc0c653b804919bbe2843575e.setIcon(icon_85a2a4921d9f6849f79f4b915e71c64a);
+            
+    
+            var marker_1efb78d3e20b4c3b6db05de82fdf2b1d = L.marker(
+                [-8.5590123, 116.4247639],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_c3a6ae91c7abccc5765408f5f74a4445 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f33dfdfc60f421a454afd644513a90d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e6030adb126841771baef9f10f79a2bf = $(`<div id="html_e6030adb126841771baef9f10f79a2bf" style="width: 100.0%; height: 100.0%;"><b>Green Haven Homestay</b><br>Tetebatu Lombok, Indonesia<br>Your Rating: 4.0/5<br>Google Rating: 4.9<br>Dates: 30/08/25 - 01/09/25<br><br><i>Comment:</i><br>Lovely people & Nice location near Rinjani</div>`)[0];
+                popup_7f33dfdfc60f421a454afd644513a90d.setContent(html_e6030adb126841771baef9f10f79a2bf);
+            
+        
+
+        marker_1efb78d3e20b4c3b6db05de82fdf2b1d.bindPopup(popup_7f33dfdfc60f421a454afd644513a90d)
+        ;
+
+        
+    
+    
+            marker_1efb78d3e20b4c3b6db05de82fdf2b1d.bindTooltip(
+                `<div>
+                     Green Haven Homestay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1efb78d3e20b4c3b6db05de82fdf2b1d.setIcon(icon_c3a6ae91c7abccc5765408f5f74a4445);
+            
+    
+            var marker_002554bfadce6fed7bc48d2327694188 = L.marker(
+                [-8.8874265, 116.2725171],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_edbe4fb18aaa938c4c424ad842bffb9f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3cb042179ff50b50d6b6ade345774cc3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_edd09191011023af9c672ae91c10e964 = $(`<div id="html_edd09191011023af9c672ae91c10e964" style="width: 100.0%; height: 100.0%;"><b>Mana Eco Retreat </b><br>Kuta Lombok, Indonesia<br>Your Rating: 5.0/5<br>Google Rating: 4.7<br>Dates: 01/09/25 - 07/09/25<br><br><i>Comment:</i><br>Lovely hostel / retreat with yoga all day and a pool, restaurant was incredible</div>`)[0];
+                popup_3cb042179ff50b50d6b6ade345774cc3.setContent(html_edd09191011023af9c672ae91c10e964);
+            
+        
+
+        marker_002554bfadce6fed7bc48d2327694188.bindPopup(popup_3cb042179ff50b50d6b6ade345774cc3)
+        ;
+
+        
+    
+    
+            marker_002554bfadce6fed7bc48d2327694188.bindTooltip(
+                `<div>
+                     Mana Eco Retreat 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_002554bfadce6fed7bc48d2327694188.setIcon(icon_edbe4fb18aaa938c4c424ad842bffb9f);
+            
+    
+            var marker_77db4f6b9daff2714da9438ba113c691 = L.marker(
+                [-8.3529387, 116.0864524],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_23847c6fb05c9f23431e20bc52197766 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_421215f2a05f0322e402a2434fe9bda0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a6ccbea7fb928db2c85fedca4bb2346d = $(`<div id="html_a6ccbea7fb928db2c85fedca4bb2346d" style="width: 100.0%; height: 100.0%;"><b>Tipsea Turtle</b><br>Gili Air, Indonesia<br>Your Rating: 4.0/5<br>Google Rating: 4.8<br>Dates: 07/09/25 - 10/09/25<br><br><i>Comment:</i><br>Free yoga, activities everyday, chill but a little spenny for the quality of the accom</div>`)[0];
+                popup_421215f2a05f0322e402a2434fe9bda0.setContent(html_a6ccbea7fb928db2c85fedca4bb2346d);
+            
+        
+
+        marker_77db4f6b9daff2714da9438ba113c691.bindPopup(popup_421215f2a05f0322e402a2434fe9bda0)
+        ;
+
+        
+    
+    
+            marker_77db4f6b9daff2714da9438ba113c691.bindTooltip(
+                `<div>
+                     Tipsea Turtle
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_77db4f6b9daff2714da9438ba113c691.setIcon(icon_23847c6fb05c9f23431e20bc52197766);
+            
+    
+            var marker_5b1f306bff1c8ec7f5973a94b92e3da5 = L.marker(
+                [-8.347736099999999, 116.0578835],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_526878be4b1bbc43b78865c4bf62abfb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a5a37f2364a814ec551f36149f5b70d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_35c418d1d3a58655230d7dc14ecf14f3 = $(`<div id="html_35c418d1d3a58655230d7dc14ecf14f3" style="width: 100.0%; height: 100.0%;"><b>Meno Madia bungalow</b><br>Gili Meno, Indonesia<br>Your Rating: 4.0/5<br>Google Rating: 4.8<br>Dates: 10/09/25 - 11/09/25<br><br><i>Comment:</i><br>Lovely staff and cute bungalow</div>`)[0];
+                popup_a5a37f2364a814ec551f36149f5b70d6.setContent(html_35c418d1d3a58655230d7dc14ecf14f3);
+            
+        
+
+        marker_5b1f306bff1c8ec7f5973a94b92e3da5.bindPopup(popup_a5a37f2364a814ec551f36149f5b70d6)
+        ;
+
+        
+    
+    
+            marker_5b1f306bff1c8ec7f5973a94b92e3da5.bindTooltip(
+                `<div>
+                     Meno Madia bungalow
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5b1f306bff1c8ec7f5973a94b92e3da5.setIcon(icon_526878be4b1bbc43b78865c4bf62abfb);
+            
+    
+            var marker_01bba2fa1757adfde95d7bec98326f4c = L.marker(
+                [-8.3613119, 116.0783776],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_27bbd2437bd67788ee2835dc15f4cf38 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0e4474036c2c8f78f4c06925dd471e06 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1fccb483665a3da0b1651af4d222ac0d = $(`<div id="html_1fccb483665a3da0b1651af4d222ac0d" style="width: 100.0%; height: 100.0%;"><b>Captain Coconuts</b><br>Gili Air, Indonesia<br>Your Rating: 4.0/5<br>Google Rating: 4.7<br>Dates: 11/09/25 - 14/09/25<br><br><i>Comment:</i><br>Hanging beds in a bamboo tree house</div>`)[0];
+                popup_0e4474036c2c8f78f4c06925dd471e06.setContent(html_1fccb483665a3da0b1651af4d222ac0d);
+            
+        
+
+        marker_01bba2fa1757adfde95d7bec98326f4c.bindPopup(popup_0e4474036c2c8f78f4c06925dd471e06)
+        ;
+
+        
+    
+    
+            marker_01bba2fa1757adfde95d7bec98326f4c.bindTooltip(
+                `<div>
+                     Captain Coconuts
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_01bba2fa1757adfde95d7bec98326f4c.setIcon(icon_27bbd2437bd67788ee2835dc15f4cf38);
+            
+    
+            var marker_103b8ec9c58be045f2f76f3f0f7e1107 = L.marker(
+                [-8.6665148, 115.4489658],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_bfa2d748bfdee364107c4d9b142594fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea4cb29464f31dc3bb58213a128b4a44 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_18c0efb30882bde2c6c4eb52a021198e = $(`<div id="html_18c0efb30882bde2c6c4eb52a021198e" style="width: 100.0%; height: 100.0%;"><b>Blue Corner Dive Center</b><br>Nusa Lembongan, Indonesia<br>Your Rating: 3.0/5<br>Google Rating: 4.8<br>Dates: 14/09/25 - 18/09/25<br><br><i>Comment:</i><br>basic room but v affordable</div>`)[0];
+                popup_ea4cb29464f31dc3bb58213a128b4a44.setContent(html_18c0efb30882bde2c6c4eb52a021198e);
+            
+        
+
+        marker_103b8ec9c58be045f2f76f3f0f7e1107.bindPopup(popup_ea4cb29464f31dc3bb58213a128b4a44)
+        ;
+
+        
+    
+    
+            marker_103b8ec9c58be045f2f76f3f0f7e1107.bindTooltip(
+                `<div>
+                     Blue Corner Dive Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_103b8ec9c58be045f2f76f3f0f7e1107.setIcon(icon_bfa2d748bfdee364107c4d9b142594fa);
+            
+    
+            var marker_22441849d122834e21268049ad831940 = L.marker(
+                [-8.808612, 115.112891],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_3e09e92b49e8c61f95a6969d98f0eeb1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6ad15172744184b7ab67a9623c9ca8ae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4e114cede0b2bdaf7da2fdb105ee0233 = $(`<div id="html_4e114cede0b2bdaf7da2fdb105ee0233" style="width: 100.0%; height: 100.0%;"><b>Karma backpackers</b><br>Uluwatu, Indonesia<br>Your Rating: 4.0/5<br>Google Rating: 4.1<br>Dates: 18/09/25 - 20/09/25<br><br><i>Comment:</i><br>nan</div>`)[0];
+                popup_6ad15172744184b7ab67a9623c9ca8ae.setContent(html_4e114cede0b2bdaf7da2fdb105ee0233);
+            
+        
+
+        marker_22441849d122834e21268049ad831940.bindPopup(popup_6ad15172744184b7ab67a9623c9ca8ae)
+        ;
+
+        
+    
+    
+            marker_22441849d122834e21268049ad831940.bindTooltip(
+                `<div>
+                     Karma backpackers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_22441849d122834e21268049ad831940.setIcon(icon_3e09e92b49e8c61f95a6969d98f0eeb1);
+            
+    
+            var marker_6bacc09fb3d63e2f87ae2b562a6060a4 = L.marker(
+                [1.3102332, 103.8583127],
+                {
+}
+            ).addTo(map_cbc2651d5b25ef1ed3e35e2817a141b3);
+        
+    
+            var icon_1112fbc4c140a7c7ded1916afde236fc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_202cd0aec461f8af56bbb40ac7f9a47f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_41ec8b46756252947bb7e7c3b2632307 = $(`<div id="html_41ec8b46756252947bb7e7c3b2632307" style="width: 100.0%; height: 100.0%;"><b>Dream Lodge @ Farrer Park</b><br>Singapore, Singapore<br>Your Rating: 4.0/5<br>Google Rating: 4.5<br>Dates: 20/09/25 - 23/09/25<br><br><i>Comment:</i><br>nan</div>`)[0];
+                popup_202cd0aec461f8af56bbb40ac7f9a47f.setContent(html_41ec8b46756252947bb7e7c3b2632307);
+            
+        
+
+        marker_6bacc09fb3d63e2f87ae2b562a6060a4.bindPopup(popup_202cd0aec461f8af56bbb40ac7f9a47f)
+        ;
+
+        
+    
+    
+            marker_6bacc09fb3d63e2f87ae2b562a6060a4.bindTooltip(
+                `<div>
+                     Dream Lodge @ Farrer Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6bacc09fb3d63e2f87ae2b562a6060a4.setIcon(icon_1112fbc4c140a7c7ded1916afde236fc);
+            
+</script>
+</html>
