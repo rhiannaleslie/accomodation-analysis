@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP Analysis of My Southeast Asia Accommodation Reviews | Accommodation Analysis</title>
+    <meta name="description" content="An in-depth NLP analysis of accommodation comments from my 6-month Southeast Asia backpacking trip, revealing patterns in my review writing and accommodation preferences.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/accomodation-analysis/assets/css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/accomodation-analysis/assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/accomodation-analysis/">
+                <i class="fas fa-map-marked-alt me-2"></i>
+                Accommodation Analysis
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/accomodation-analysis/">
+                            <i class="fas fa-home me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/accomodation-analysis/map">
+                            <i class="fas fa-map me-1"></i>Interactive Map
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/accomodation-analysis/blog">
+                            <i class="fas fa-blog me-1"></i>Analysis Blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/accomodation-analysis/about">
+                            <i class="fas fa-info-circle me-1"></i>About
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-4">
+        
+        <header class="page-header">
+            <h1 class="page-title">NLP Analysis of My Southeast Asia Accommodation Reviews</h1>
+            
+            <p class="text-muted">
+                <i class="fas fa-calendar me-1"></i>
+                April 14, 2026
+                
+                <span class="ms-3">
+                    <i class="fas fa-user me-1"></i>
+                    Rhianna Leslie
+                </span>
+                
+            </p>
+            
+        </header>
+        
+
+        <div class="content">
+            <article class="blog-post">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <div class="post-content">
+                <h1 id="nlp-analysis-of-southeast-asia-accommodation-reviews">NLP Analysis of Southeast Asia Accommodation Reviews</h1>
+
+<p>During my 6-month backpacking trip through Southeast Asia, I stayed at 68 different accommodations across 7 countries. This post dives deep into the linguistic patterns in my accommodation reviews using natural language processing techniques.</p>
+
+<h2 id="the-dataset">The Dataset</h2>
+
+<ul>
+  <li><strong>Total accommodations</strong>: 68</li>
+  <li><strong>Countries visited</strong>: Thailand, Vietnam, Indonesia, Malaysia, Cambodia, Laos, Singapore</li>
+  <li><strong>Date range</strong>: March 2025 - September 2025</li>
+  <li><strong>Comments with text</strong>: 63</li>
+</ul>
+
+<h2 id="text-preprocessing">Text Preprocessing</h2>
+
+<p>Before analysis, I cleaned the text data by:</p>
+<ul>
+  <li>Converting to lowercase</li>
+  <li>Removing special characters and numbers</li>
+  <li>Tokenizing into words</li>
+  <li>Removing common stopwords</li>
+  <li>Lemmatizing words to their base forms</li>
+</ul>
+
+<h2 id="key-findings">Key Findings</h2>
+
+<h3 id="most-common-words">Most Common Words</h3>
+
+<p>The most frequently mentioned words in my reviews reveal my priorities:</p>
+
+<ol>
+  <li><strong>“Lovely”</strong> (11 mentions) - My go-to positive descriptor</li>
+  <li><strong>“Location”</strong> (10 mentions) - Location is crucial</li>
+  <li><strong>“Basic”</strong> (9 mentions) - Many places were described as basic</li>
+  <li><strong>“Cute”</strong> (7 mentions) - Aesthetic appreciation</li>
+  <li><strong>“Quiet”</strong> (6 mentions) - Peace and quiet valued</li>
+  <li><strong>“Pool”</strong> (6 mentions) - Swimming facilities mentioned</li>
+</ol>
+
+<h3 id="topic-modeling-results">Topic Modeling Results</h3>
+
+<p>Using Latent Dirichlet Allocation (LDA), I identified 4 main topics in my comments:</p>
+
+<p><strong>Topic 1 (38.7%)</strong>: Beautiful views, comfort, family-friendly aspects</p>
+<ul>
+  <li>Keywords: beautiful, lovely, view, bed, people, accom, comfy, free, amazing, family</li>
+</ul>
+
+<p><strong>Topic 2 (33.9%)</strong>: Location and atmosphere</p>
+<ul>
+  <li>Keywords: location, quiet, pool, fab, social, fine, cute, toilet, lovely, yoga</li>
+</ul>
+
+<p><strong>Topic 3 (14.5%)</strong>: Staff and dorm experiences</p>
+<ul>
+  <li>Keywords: cute, staff, lovely, dorm, stayed, clean, female, comfy, spenny, amazing</li>
+</ul>
+
+<p><strong>Topic 4 (12.9%)</strong>: Basic accommodations and social aspects</p>
+<ul>
+  <li>Keywords: basic, okay, busy, lovely, family, comfy, balcony, people, met, clean</li>
+</ul>
+
+<h2 id="geographic-patterns">Geographic Patterns</h2>
+
+<h3 id="average-ratings-by-country">Average Ratings by Country</h3>
+
+<ul>
+  <li><strong>Indonesia</strong>: 4.07/5 (highest rated)</li>
+  <li><strong>Thailand</strong>: 4.0/5</li>
+  <li><strong>Singapore</strong>: 4.0/5</li>
+  <li><strong>Cambodia</strong>: 3.86/5</li>
+  <li><strong>Vietnam</strong>: 3.65/5</li>
+  <li><strong>Laos</strong>: 3.5/5</li>
+  <li><strong>Malaysia</strong>: 3.08/5 (lowest rated)</li>
+</ul>
+
+<h3 id="comment-distribution">Comment Distribution</h3>
+
+<ul>
+  <li><strong>Vietnam</strong>: 16 accommodations</li>
+  <li><strong>Indonesia</strong>: 14 accommodations</li>
+  <li><strong>Thailand</strong>: 12 accommodations</li>
+  <li><strong>Malaysia</strong>: 10 accommodations</li>
+  <li><strong>Cambodia</strong>: 7 accommodations</li>
+  <li><strong>Laos</strong>: 4 accommodations</li>
+</ul>
+
+<h2 id="temporal-trends">Temporal Trends</h2>
+
+<p>My ratings showed interesting patterns over time:</p>
+
+<ul>
+  <li><strong>March-April 2025</strong>: Higher ratings (4.0+ average)</li>
+  <li><strong>May-June 2025</strong>: More variable ratings</li>
+  <li><strong>July-August 2025</strong>: Generally positive (3.8+ average)</li>
+  <li><strong>September 2025</strong>: Mixed ratings</li>
+</ul>
+
+<h2 id="text-length-analysis">Text Length Analysis</h2>
+
+<ul>
+  <li><strong>Average comment length</strong>: 3.7 words after preprocessing</li>
+  <li><strong>Shortest comment</strong>: 0 words (empty)</li>
+  <li><strong>Longest comment</strong>: 13 words</li>
+</ul>
+
+<p>This suggests I wrote concise but meaningful reviews, focusing on key aspects rather than lengthy descriptions.</p>
+
+<h2 id="insights-and-reflections">Insights and Reflections</h2>
+
+<ol>
+  <li><strong>Location matters most</strong>: “Location” appears in 10% of my comments</li>
+  <li><strong>Atmosphere over luxury</strong>: Words like “quiet,” “cute,” and “social” appear frequently</li>
+  <li><strong>Honest but positive</strong>: My average rating of 3.72/5 shows realistic expectations</li>
+  <li><strong>Cultural adaptation</strong>: Different countries elicited different comment patterns</li>
+</ol>
+
+<h2 id="technical-implementation">Technical Implementation</h2>
+
+<p>This analysis was performed using:</p>
+<ul>
+  <li><strong>Python</strong> with pandas, NLTK, and scikit-learn</li>
+  <li><strong>Text preprocessing</strong> with NLTK</li>
+  <li><strong>Topic modeling</strong> with Latent Dirichlet Allocation (LDA)</li>
+  <li><strong>Word frequency analysis</strong> with collections.Counter</li>
+  <li><strong>Temporal analysis</strong> with pandas datetime functions</li>
+</ul>
+
+<p>The complete analysis code is available in the <code class="language-plaintext highlighter-rouge">comment-nlp-analysis.ipynb</code> notebook in this repository.</p>
+
+<h2 id="future-analysis-ideas">Future Analysis Ideas</h2>
+
+<ul>
+  <li><strong>Sentiment analysis</strong> to quantify positive/negative language</li>
+  <li><strong>Geographic clustering</strong> of accommodation types</li>
+  <li><strong>Price correlation</strong> with ratings and comments</li>
+  <li><strong>Seasonal patterns</strong> in accommodation quality</li>
+</ul>
+
+<hr />
+
+<p><em>This analysis provides a fascinating look at how I experienced and described accommodations during my Southeast Asia journey. The patterns reveal not just where I stayed, but how I perceived and valued different aspects of travel accommodation.</em></p>
+
+            </div>
+
+            
+            <div class="post-tags mt-4">
+                <i class="fas fa-tags me-2"></i>
+                
+                <span class="badge bg-secondary me-1">accommodation</span>
+                
+                <span class="badge bg-secondary me-1">reviews</span>
+                
+                <span class="badge bg-secondary me-1">sentiment</span>
+                
+                <span class="badge bg-secondary me-1">topic-modeling</span>
+                
+                <span class="badge bg-secondary me-1">southeast-asia</span>
+                
+            </div>
+            
+
+            
+            <div class="post-categories mt-3">
+                <i class="fas fa-folder me-2"></i>
+                
+                <span class="badge bg-primary me-1">travel</span>
+                
+                <span class="badge bg-primary me-1">data-analysis</span>
+                
+                <span class="badge bg-primary me-1">nlp</span>
+                
+            </div>
+            
+        </div>
+    </div>
+</article>
+
+<!-- Related Posts -->
+
+<div class="row mt-5">
+    <div class="col-lg-8 mx-auto">
+        <h3 class="mb-3">Related Posts</h3>
+        <div class="row">
+            
+        </div>
+    </div>
+</div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Accommodation Analysis</h5>
+                    <p>Interactive analysis of accommodation reviews and travel maps</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">
+                        <i class="fas fa-code me-1"></i>
+                        Built with Jekyll & Bootstrap
+                    </p>
+                    <p class="mb-0">
+                        <i class="fab fa-github me-1"></i>
+                        <a href="https://github.com/rhiannaleslie/accomodation-analysis" class="text-light" target="_blank">
+                            View on GitHub
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2026 Rhianna Leslie. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="/accomodation-analysis/assets/js/main.js"></script>
+</body>
+</html>
