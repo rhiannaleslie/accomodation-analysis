@@ -27,7 +27,6 @@ dist/
 *.log
 
 # Ensure data and outputs folders are tracked for deployment
-!/data/
-!/data/**
+!/data/raw/accomodations.csv
 !/outputs/
 !/outputs/**
