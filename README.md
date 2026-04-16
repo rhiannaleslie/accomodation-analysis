@@ -1,6 +1,6 @@
 # Accommodation Analysis
 
-Visualise the accommodation and ratings and reviews from my backpacking trip on an interactive map; `https://rhiannaleslie.github.io/accomodation-analysis/`
+Visualise the accommodation and ratings and reviews from my backpacking trip on an interactive map; [https://rhiannaleslie.github.io/accomodation-analysis/](https://rhiannaleslie.github.io/accomodation-analysis/)
 
 
 ## File Structure
@@ -67,7 +67,6 @@ Optional agruments to add if you only want enrich the data with the google place
 --enrichdata-only
 --buildmap-only
 ```
-
 
 The generated map will be saved to `outputs/index.html`.
 
