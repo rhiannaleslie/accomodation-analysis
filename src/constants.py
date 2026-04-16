@@ -6,7 +6,7 @@ import os
 
 # File paths
 DATA_DIR = 'data'
-ACCOMMODATIONS_CSV = os.path.join(DATA_DIR, 'accommodations.csv')
+ACCOMMODATIONS_CSV = os.path.join(DATA_DIR, 'raw/accommodations.csv')
 ENRICHED_CSV = os.path.join(DATA_DIR, 'processed/accommodations_enriched.csv')
 OUTPUTS_DIR = 'outputs'
 MAP_OUTPUT_FILE = os.path.join(OUTPUTS_DIR, 'index.html')
