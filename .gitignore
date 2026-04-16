@@ -31,5 +31,6 @@ dist/
 
 # Ensure data and outputs folders are tracked for deployment
 !/data/raw/accomodations.csv
+!/data/processed/accomodations_enriched.csv
 !/outputs/
 !/outputs/**
