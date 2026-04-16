@@ -62,6 +62,13 @@ To enrich data with google places information and generate the interactive map:
 python -m src.main
 ```
 
+Optional agruments to add if you only want enrich the data with the google places API or build the map:
+```bash
+--enrichdata-only
+--buildmap-only
+```
+
+
 The generated map will be saved to `outputs/index.html`.
 
 
