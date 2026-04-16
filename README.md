@@ -7,44 +7,23 @@ Visualise accommodation and ratings on an interactive map, with comprehensive NL
 ```text
 .
 ├── data
-│   ├── accommodations.csv
-│   └── accommodations_enriched.csv
-├── docs/                          # GitHub Pages site
-│   ├── _config.yml
-│   ├── _layouts/
-│   │   ├── default.html
-│   │   └── post.html
-│   ├── _pages/
-│   │   ├── about.md
-│   │   ├── blog.md
-│   │   └── map.md
-│   ├── _posts/
-│   │   └── 2024-01-15-welcome-to-accommodation-analysis.md
-│   ├── assets/
-│   │   ├── css/
-│   │   │   └── main.css
-│   │   ├── js/
-│   │   │   └── main.js
-│   │   ├── index.html          # Interactive map
-│   │   └── ...
-│   ├── _config.yml
-│   ├── Gemfile
-│   ├── index.md
-│   ├── deploy.sh
-│   └── new_post.sh
+│   ├── raw
+│       └── accommodations.csv
+│   ├── processed
 ├── notebooks
 │   ├── get_data.ipynb           # Data collection notebook
-│   ├── sentiment-eda.ipynb      # Sentiment analysis and EDA
-│   └── comment-nlp-analysis.ipynb # NLP trend analysis of comments
 ├── outputs
 │   └── index.html               # Generated interactive map
 ├── src
 │   ├── __init__.py
 │   ├── constants.py
+│   ├── enrich_data.py
 │   ├── main.py
 │   └── map_builder.py
+├── .gitignore
 ├── pyproject.toml
-└── README.md
+├── README.md
+└── uv.lock
 ```
 
 ## Features
