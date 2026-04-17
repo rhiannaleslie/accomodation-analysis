@@ -1,6 +1,5 @@
 """
-Main entry point for accommodation analysis workflow.
-Generates map from existing enriched data.
+Workflow to enrich data and or generate the interactive map
 """
 
 import argparse
