@@ -1,6 +1,6 @@
 # Accommodation Analysis
 
-Visualise the accommodation and ratings and reviews from my backpacking trip on an interactive map; [https://rhiannaleslie.github.io/accomodation-analysis/](https://rhiannaleslie.github.io/accomodation-analysis/)
+Visualise my accommodation ratings and reviews from my backpacking trip on an interactive map; [https://rhiannaleslie.github.io/accomodation-analysis/](https://rhiannaleslie.github.io/accomodation-analysis/)
 
 
 ## File Structure
