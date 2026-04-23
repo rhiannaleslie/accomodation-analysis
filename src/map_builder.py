@@ -1,3 +1,4 @@
+import html
 import pandas as pd
 import folium
 from datetime import datetime
@@ -44,12 +45,12 @@ def create_base_map(df_map):
     # Add accommodation markers (blue)
     for idx, row in df_map.iterrows():
         popup_text = (
-            f"<b>{row['name']}</b><br>"
-            f"{row['city']}, {row['country']}<br>"
-            f"Your Rating: {row['my_rating']}/5<br>"
-            f"Google Rating: {row['google_rating']}<br>"
-            f"Dates: {row['dates_stayed']}<br>"
-            f"<br><i>Comment:</i><br>{row['comment']}"
+            f"<b>{html.escape(str(row['name']))}</b><br>"
+            f"{html.escape(str(row['city']))}, {html.escape(str(row['country']))}<br>"
+            f"Your Rating: {html.escape(str(row['my_rating']))}/5<br>"
+            f"Google Rating: {html.escape(str(row['google_rating']))}<br>"
+            f"Dates: {html.escape(str(row['dates_stayed']))}<br>"
+            f"<br><i>Comment:</i><br>{html.escape(str(row['comment']))}"
         )
         
         folium.Marker(
